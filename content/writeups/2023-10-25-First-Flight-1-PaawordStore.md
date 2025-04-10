@@ -3,7 +3,7 @@ title = "First Flight 1 : PasswordStore"
 date = "2023-10-25"
 +++
 
-## [H1] Storing password on-chain makes it visible to anyone
+# [H1] Storing password on-chain makes it visible to anyone
 
 **Description:**
 The data that we stored at `PasswordStore:s_password` is intended to be private and only visible to the owner. since it was placed on chain, everything that we store on-chain is visible to everyone.
@@ -36,7 +36,7 @@ It would be a best practice to not store any private data on-chain since the cha
 
 ---
 
-## [H2] `PasswordStore::setPassword` has no access control, vulnerable to non-owner to change it.
+# [H2] `PasswordStore::setPassword` has no access control, vulnerable to non-owner to change it.
 
 **Description:**
 The `PasswordStore::setPassword` function is intended to trigger only by the owner to change the `PasswordStore::s_password`. Since the function doesn't have any access control, it allows even a non-owner to change the password.
@@ -75,7 +75,7 @@ Add the below lines to make sure only owner can trigger the function.
 
 ---
 
-## [L1] Initialization Timeframe Vulnerability
+# [L1] Initialization Timeframe Vulnerability
 
 **Description:**
 The PasswordStore contract exhibits an initialization timeframe vulnerability. This means that there is a period between contract deployment and the explicit call to setPassword during which the password remains in its default state. During this initialization timeframe, the contract's password is effectively empty and can be considered a security gap.
@@ -88,7 +88,7 @@ To mitigate the initialization timeframe vulnerability, consider setting a passw
 
 ---
 
-## [I1] Netspec indicates a parameter that doesn't exist, causing netspec incorrect.
+# [I1] Netspec indicates a parameter that doesn't exist, causing netspec incorrect.
 
 **Description:**
 The `PasswordStore::getPassword` function is not expecting any parameter where in the netSpec says it should be getPassword(string)
