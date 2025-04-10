@@ -1,3 +1,8 @@
++++
+title = "First Flight 2 : Puppy Raffle"
+date = "2023-10-25"
++++
+
 # High
 
 ## [H-1] Weak Randomness in `Raffle::selectWinner` leads to anyone to select the winner
@@ -14,7 +19,6 @@ Using on-chain values as a base to the randomness is a well known threat. Better
 **Another Instance:**
 PuppyRaffle.commonImageUri (src/PuppyRaffle.sol#139)
 
----
 
 ## [H-2] Malicious winner can revert the transaction by having revert statement in receive/fallback functions while receiving the winning amount which halts the raffle forever.
 **Description:**
@@ -22,7 +26,6 @@ In `Raffle:selectWinner` we are making an external call to send winning amount t
 ### Impact:
 Since the transaction failure, it's not possible to distribute the prize as well as start a new round.
 
----
 
 ## [H-3] Integer overflow of `totalFee` / `fee` in `Raffle:selectWinner` will block some money in the contract
 **Description:**
@@ -33,6 +36,7 @@ In `Raffle:selectWinner` we calculate the total fee generated in a raffle using 
 ---
 
 # Medium
+
 ## [M-1] Looping through players array to check for duplicates in `PuppyRaffle::enterRaffle`  is a potential denial of service (DoS) attack, incrementing gas costs for future entrants
 **Description:**
 The `PuppyRaffle::enterRaffle`  function loops through the `players`  array to check for duplicates. However, the longer the `PuppyRaffle:players`  array is, the more checks a new player will have to make. This means the gas costs for players who enter right when the raffle starts will be dramatically lower than those who enter later. Every additional address in the `players`  array is an additional check the loop will have to make.
@@ -134,13 +138,14 @@ function selectWinner() external {
 require(block.timestamp >= raffleStartTime + raffleDuration, "PuppyRaffle: Raffle not over");
 }
 ```
----
 
 # [M-2] Having a strict balance check in `Raffle:selectWinner` will allow attacker to send extra eth to contract using self-destruct which make to halt the withdraw the money
 **Description:**
 In `Raffle:selectWinner` we do have a condition to check whether the contract is having the exact balance that we received as a **Fee**. Point to remember is there is always a way to send eth to any contract other than the functionalities the contract provided so having this strict condition is not considering other ways to send eth which eventually breaks this condition and revert which makes no one to withdraw the money.
 **Recommendation:**
 Use `address(this).balance >= uint256(totalFees)` instead of `address(this).balance == uint256(totalFees)`
+
+---
 
 # Low
 
@@ -151,7 +156,6 @@ Inside the `Raffle::selectWinner` function we have been generating a hash using 
 1. Found in src/PuppyRaffle.sol: 128
 2. Found in src/PuppyRaffle.sol: 139
 
----
 
 ## [L-2] Referring to `players.length` in `Raffle:selectWinner` will lead to wrong calculation
 **Description:**
