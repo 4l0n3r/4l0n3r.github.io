@@ -23,7 +23,7 @@ PuppyRaffle.commonImageUri (src/PuppyRaffle.sol#139)
 ## [H-2] Malicious winner can revert the transaction by having revert statement in receive/fallback functions while receiving the winning amount which halts the raffle forever.
 **Description:**
 In `Raffle:selectWinner` we are making an external call to send winning amount to the winner. If the winner is a contract and don't have any fallbacks functions / have revert statements in fallback functions then the transaction will be reverted this eventually makes the people to join the raffle but not get money back to anyone.
-### Impact:
+**Impact:**
 Since the transaction failure, it's not possible to distribute the prize as well as start a new round.
 
 
@@ -139,7 +139,7 @@ require(block.timestamp >= raffleStartTime + raffleDuration, "PuppyRaffle: Raffl
 }
 ```
 
-# [M-2] Having a strict balance check in `Raffle:selectWinner` will allow attacker to send extra eth to contract using self-destruct which make to halt the withdraw the money
+## [M-2] Having a strict balance check in `Raffle:selectWinner` will allow attacker to send extra eth to contract using self-destruct which make to halt the withdraw the money
 **Description:**
 In `Raffle:selectWinner` we do have a condition to check whether the contract is having the exact balance that we received as a **Fee**. Point to remember is there is always a way to send eth to any contract other than the functionalities the contract provided so having this strict condition is not considering other ways to send eth which eventually breaks this condition and revert which makes no one to withdraw the money.
 **Recommendation:**
