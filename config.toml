@@ -1,18 +1,11 @@
-base_url = "https://not-matthias.github.io/apollo/"
-title = "not-matthias"
-description = "This is an example description"
+base_url = "https://4l0n3r.github.io/"
+title = "Johny"
+description = "Aka 4l0n3r"
 build_search_index = true
 generate_feeds = true
 compile_sass = true
 minify_html = true
 taxonomies = [{ name = "tags" }]
-
-[search]
-include_title = true
-include_description = true
-include_path = true
-include_content = true
-index_format = "elasticlunr_json"
 
 [markdown]
 highlight_code = true
