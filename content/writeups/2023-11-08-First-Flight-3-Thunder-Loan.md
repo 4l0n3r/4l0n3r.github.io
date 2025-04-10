@@ -24,12 +24,12 @@ uint256 public constant FEE_PRECISION = 1e18;
 
 Since Solidity relies on the order of variable declaration to assign storage slots, changing the order during an upgrade causes the `s_flashLoanFee` to incorrectly take on the value of `s_feePrecision`. Additionally, the `s_currentlyFlashLoaning` mapping will point to an incorrect storage location, leading to undefined behavior.
 
-### **Impact:**
+**Impact:**
 After upgrading:
 - **Incorrect Fees:** The `s_flashLoanFee` will be set to the previous `s_feePrecision` value, leading to users being charged incorrect flash loan fees.
 - **Broken Mapping:** The `s_currentlyFlashLoaning` mapping will be misaligned, potentially allowing users to bypass restrictions or causing faulty state tracking.
 
-### **Proof of Code:**
+**Proof of Code:**
 The storage layout difference can be verified by running:
 
 ```bash
