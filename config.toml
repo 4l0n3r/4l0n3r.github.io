@@ -30,8 +30,10 @@ menu = [
 ]
 
 socials = [
-    { name = "twitter", url = "https://twitter.com/not_matthias", icon = "twitter" },
-    { name = "github", url = "https://github.com/not-matthias/", icon = "github" },
+    { name = "twitter", url = "https://x.com/0xJ0hny", icon = "twitter" },
+    { name = "github", url = "https://github.com/4l0n3r/", icon = "github" },
+    { name = "linkedin", url = "https://www.linkedin.com/in/johny-vasamsettti/", icon = "linkedin" },
+    { name = "Email", url = "mailto: vasamsetti.johny@gmail.com", icon = "email" },
 ]
 
 stylesheets = [
