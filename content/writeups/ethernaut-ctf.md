@@ -10,7 +10,7 @@ Hello peeps, recently have started learning things about blockchain.Most probabl
 Ethernaut is a foundational platform for hands-on smart contract security practice. Below are my solutions for the first two challenges, highlighting key vulnerabilities and attack vectors.  
 Everytime you got a challenge, start with a click on `Get new instance`. Once you done with it click on `Submit level` option.
 
-# 1: Hello Ethernaut
+# 0: Hello Ethernaut
 **Link:** https://ethernaut.openzeppelin.com/level/0  
 **Bug:** Sensitive data exposure  
 **Objective:** Familiarize yourself with contract interaction via the browser console  
@@ -21,7 +21,7 @@ Everytime you got a challenge, start with a click on `Get new instance`. Once yo
 
 **Note:** You might be wondering how can I know that I need to execute the `await contract.password()` to get the password to authenticate. I strongly believe there might be a variable exist which is being checked in authenticate function. So I checked all the function and variables available in contract with the help of console suggestion whenever we add `await contract`.
 
-# 2: Fallback
+# 1: Fallback
 **Link:** https://ethernaut.openzeppelin.com/level/1  
 **Bug:** Improper ownership transfer in receive() function.  
 **Objective:** Become the owner and drain the contract’s funds.  
@@ -61,4 +61,22 @@ Everytime you got a challenge, start with a click on `Get new instance`. Once yo
     cast send 0x678be0dE93C246b60d05b0dC53E03c226A77bE0E "withdraw()" --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
 ```
 
+
+# 2: Fal1out
+**Link:** https://ethernaut.openzeppelin.com/level/2  
+**Bug:** Improper ownership transfer in Fal1out() function.  
+**Objective:** Become the owner and drain the contract’s funds.  
+**Description:** The ownership will be given to the user who calls the `Fal1out()` function. They missed to have the contructor name same as contract name, where it's giving ownership permissions to the creator.  
+**Steps:**
+- call the **Fal1out()** function.
+
+**Using Console:**
+```shell
+  await contract.Fal1out()
+```
+
+**Using Foundry:**
+```solidity
+cast call 0xb685F5c3aCdb5D874D3e1219D8a4FDF08a502c6E  "Fal1out()" --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+```
 
