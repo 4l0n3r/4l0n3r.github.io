@@ -17,7 +17,7 @@ Everytime you got a challenge, start with a click on `Get new instance`. Once yo
 **Steps:**  
 - As they mentioned in the problem statement,let's open the console tab and execute `await contract.info()`. let move forward with response it gives back
 
-![eth-1.png](../images/eth-1.png)
+![eth-1.png](../writeup-images/eth-1.png)
 
 **Note:** You might be wondering how can I know that I need to execute the `await contract.password()` to get the password to authenticate. I strongly believe there might be a variable exist which is being checked in authenticate function. So I checked all the function and variables available in contract with the help of console suggestion whenever we add `await contract`.
 
