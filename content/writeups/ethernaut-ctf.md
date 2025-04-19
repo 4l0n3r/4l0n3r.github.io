@@ -179,14 +179,6 @@ cast send $ATTACKER_CONTRACT "attack(address)" $YOUR_WALLET_ADDRESS \
 **Objective:** Increase your token balance beyond initial allocation  
 **Description:** The contract uses outdated Solidity version (0.6.0) without overflow protection.  
 **Vulnerability Analysis:**  
-- How Integer Limits Work ?
-  - Ethereum uses **unsigned integers (uint256)** with range:  
-    `0` to `2²⁵⁶ - 1`
-  - When arithmetic exceeds these limits, it **wraps around**:
-      - **Overflow:** `MAX + 1 → 0`
-      - **Underflow:** `0 - 1 → MAX` or `X - (X+1)` = `X - X - 1 = -1 -> MAX` assume here X is your current balance. So if you try to transfer at least 1 more than your current salary you will end with having `2²⁵⁶ - 1` as your balance.
-        **Vulnerability Analysis:** 
-
 ```solidity
 function transfer(address _to, uint _value) public returns (bool) {
   require(balances[msg.sender] - _value >= 0);  // Vulnerable check
@@ -195,6 +187,13 @@ function transfer(address _to, uint _value) public returns (bool) {
   return true;
 }
 ```
+- How Integer Limits Work ?
+  - Ethereum uses **unsigned integers (uint256)** with range:  
+    `0` to `2²⁵⁶ - 1`
+  - When arithmetic exceeds these limits, it **wraps around**:
+      - **Overflow:** `MAX + 1 → 0`
+      - **Underflow:** `0 - 1 → MAX` or `X - (X+1)` = `X - X - 1 = -1 -> MAX` assume here X is your current balance. So if you try to transfer at least 1 more than your current balance you will end with having `2²⁵⁶ - 1` as your balance.
+
 **Steps to Attack:**
 - Find a victim address (can be any non-zero address)
 - Transfer more tokens than you have (causing underflow)
