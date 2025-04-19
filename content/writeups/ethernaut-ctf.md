@@ -11,7 +11,7 @@ Ethernaut is a foundational platform for hands-on smart contract security practi
 Everytime you got a challenge, start with a click on `Get new instance`. Once you done with it click on `Submit level` option.
 
 # 0: Hello Ethernaut
-**Link:** https://ethernaut.openzeppelin.com/level/0  
+**Link:** [Hello Ethernaut Challenge](https://ethernaut.openzeppelin.com/level/0)    
 **Bug:** Sensitive data exposure  
 **Objective:** Familiarize yourself with contract interaction via the browser console  
 **Steps:**  
@@ -22,7 +22,7 @@ Everytime you got a challenge, start with a click on `Get new instance`. Once yo
 **Note:** You might be wondering how can I know that I need to execute the `await contract.password()` to get the password to authenticate. I strongly believe there might be a variable exist which is being checked in authenticate function. So I checked all the function and variables available in contract with the help of console suggestion whenever we add `await contract`.
 
 # 1: Fallback
-**Link:** https://ethernaut.openzeppelin.com/level/1  
+**Link:** [Fallback Challenge](https://ethernaut.openzeppelin.com/level/1)  
 **Bug:** Improper ownership transfer in receive() function.  
 **Objective:** Become the owner and drain the contract’s funds.  
 **Description:** The ownership will be given to the user who contributes more through `contribute()` function. But in the fallback function, I mean in the receive() function it is giving the ownership if you just send more than 0 eth and if you already contributed more than 0 eth using contribute() function.  
@@ -63,7 +63,7 @@ Everytime you got a challenge, start with a click on `Get new instance`. Once yo
 
 
 # 2: Fal1out
-**Link:** https://ethernaut.openzeppelin.com/level/2  
+**Link:** [Fal1out Challenge](https://ethernaut.openzeppelin.com/level/2)    
 **Bug:** Improper ownership transfer in Fal1out() function.  
 **Objective:** Become the owner and drain the contract’s funds.  
 **Description:** The ownership will be given to the user who calls the `Fal1out()` function. They missed to have the contructor name same as contract name, where it's giving ownership permissions to the creator.  
@@ -81,7 +81,7 @@ cast call 0xb685F5c3aCdb5D874D3e1219D8a4FDF08a502c6E  "Fal1out()" --private-key 
 ```
 
 # 3: Coin Flip
-**Link:** https://ethernaut.openzeppelin.com/level/3  
+**Link:** [Coin Flip Challenge](https://ethernaut.openzeppelin.com/level/3)    
 **Bug:** Pseudo-randomness using predictable blockchain data    
 **Objective:** Correctly predict 10 consecutive coin flips    
 **Description:** Coin flip is based the block.number which is known publicly.  
@@ -125,9 +125,8 @@ $ cast call 0xdb0DdE6d17A9d17f57238e6CE66328eC5E28C77A "attack()" --private-key 
 **Link:** [Telephone Challenge](https://ethernaut.openzeppelin.com/level/4)  
 **Bug:** Incorrect ownership validation using `tx.origin`  
 **Objective:** Claim contract ownership  
-**Description:** The contract checks `tx.origin != msg.sender`, which can be bypassed through an intermediary contract.
-
-## 🔍 Vulnerability Analysis
+**Description:** The contract checks `tx.origin != msg.sender`, which can be bypassed through an intermediary contract.  
+**Vulnerability Analysis 🔍:**
 ```solidity
 function changeOwner(address _owner) public {
   if (tx.origin != msg.sender) {  // Vulnerable check
