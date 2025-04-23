@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://4l0n3r.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://4l0n3r.github.io/blogs/</loc>
+    </url>
+    <url>
+        <loc>https://4l0n3r.github.io/projects/</loc>
+    </url>
+    <url>
+        <loc>https://4l0n3r.github.io/tags/</loc>
+    </url>
+    <url>
+        <loc>https://4l0n3r.github.io/writeups/</loc>
+    </url>
+    <url>
+        <loc>https://4l0n3r.github.io/writeups/ethernaut-ctf/</loc>
+        <lastmod>2024-06-03</lastmod>
+    </url>
+    <url>
+        <loc>https://4l0n3r.github.io/writeups/first-flight-1-paawordstore/</loc>
+        <lastmod>2023-10-25</lastmod>
+    </url>
+    <url>
+        <loc>https://4l0n3r.github.io/writeups/first-flight-2-puppy-raffle/</loc>
+        <lastmod>2023-10-25</lastmod>
+    </url>
+    <url>
+        <loc>https://4l0n3r.github.io/writeups/first-flight-3-thunder-loan/</loc>
+        <lastmod>2023-10-25</lastmod>
+    </url>
+    <url>
+        <loc>https://4l0n3r.github.io/writeups/page/1/</loc>
+    </url>
+</urlset>
