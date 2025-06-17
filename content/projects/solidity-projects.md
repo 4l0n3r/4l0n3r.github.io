@@ -1,5 +1,6 @@
 +++
 title = "Solidity Projects"
+date = "2024-04-25"
 +++
 
 ## 🧱 Solidity Projects
