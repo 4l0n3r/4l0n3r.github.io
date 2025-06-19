@@ -1,7 +1,7 @@
 +++
-title: "Decentralized Lottery using Solidity"
-date: 2024-06-17
-description: "A decentralized lottery system using Chainlink VRF and Foundry framework."
+title = "Decentralized Lottery using Solidity"
+date = 2024-06-17
+description = "A decentralized lottery system using Chainlink VRF and Foundry framework."
 [taxonomies]
 tags=["solidity"]
 [extra]
