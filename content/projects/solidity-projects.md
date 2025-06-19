@@ -2,8 +2,10 @@
 title = "Decentralized Lottery using Solidity"
 date = 2024-06-17
 description = "A decentralized lottery system using Chainlink VRF and Foundry framework."
+
 [taxonomies]
 tags=["solidity"]
+
 [extra]
 #link_to = "https://github.com/4l0n3r/lottery"
 +++
