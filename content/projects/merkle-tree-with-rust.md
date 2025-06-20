@@ -1,6 +1,6 @@
 +++
 title = "Merkle Tree in Rust"
-date = 2024-06-17
+date = 2025-05-21
 description = "A simple Merkle Tree implementation written in Rust using SHA-256 hashing for cryptographic integrity."
 weight = 1
 
