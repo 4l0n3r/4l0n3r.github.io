@@ -1,7 +1,6 @@
 +++
 title = "Ethernaut Challenge Solutions"
 date = "2024-06-03"
-description = "Walkthroughs for Ethernaut CTF challenges, covering vulnerabilities and exploitation techniques."
 +++
 
 Hello peeps, recently have started learning things about blockchain.Most probably ethernaut would be the first place where people will land to get their hands dirty. I too landed here and I have noted things that I learned through out this CTF challenges.
