@@ -3,7 +3,7 @@ title= "Johny Vasamsetti"
 template = "homepage.html"
 +++
 
-Hey there, I'm Johny — a passionate engineer with a unique intersection of skills in Web3 and DevOps. I specialize in designing and maintaining scalable infrastructure while also diving deep into the decentralized world through smart contract development and blockchain integrations.
+Hey there, I'm Johny — a passionate engineer with a unique intersection of skills in Web3 and DevOps. I specialize in designing and maintaining scalable infrastructure while also diving deep into the decentralized world through smart contract development and blockchain security.
 
 ## Infra
  - Aws
