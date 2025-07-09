@@ -1,3 +1,8 @@
++++
+title = "Silo - Formal Verification"
+date = "2025-02-10"
++++
+
 # 🧪 Formal Verification Participation - Silo V2 (Cantina Contest)
 
 This repository documents my participation in the **Silo V2 Formal Verification Contest** hosted by [Cantina](https://cantina.xyz/), which ran from **Feb 10, 2025**. The goal of this contest was to analyze, reason about, and formally verify the correctness and security properties of the smart contracts provided by Silo using **Certora Prover**.
