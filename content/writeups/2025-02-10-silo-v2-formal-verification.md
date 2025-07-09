@@ -6,7 +6,8 @@ This repository documents my participation in the **Silo V2 Formal Verification 
 
 ## 🧾 Contest Overview
 
-* **Project**: [Silo Finance](https://www.silo.finance/)
+* **Project Details**: [Silo Finance](https://www.silo.finance/)
+* **My Rules**: [Silo Rules](https://github.com/4l0n3r/silo-v2-cantina-fv/)
 * **Contest Host**: Cantina
 * **Start Date**: Feb 10, 2025
 * **Focus**: Silo V2 Contracts
