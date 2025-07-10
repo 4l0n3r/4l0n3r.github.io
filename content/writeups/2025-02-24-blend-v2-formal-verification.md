@@ -1,3 +1,8 @@
++++
+title = "Blend - Formal Verification"
+date = "2025-02-24"
++++
+
 # 🧪 Formal Verification Participation - Blend Protocol (Cantina Contest)
 
 This repository documents my participation in the **Blend Protocol Formal Verification Contest** hosted by [Cantina](https://cantina.xyz/) in **February 2025**. The project focuses on analyzing and verifying key Rust smart contracts of the Blend Protocol using **SorabanProver**, a static verification tool for Soroban (Stellar’s smart contract platform).
