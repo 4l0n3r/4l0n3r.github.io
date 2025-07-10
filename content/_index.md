@@ -15,7 +15,7 @@ Hey there, I'm Johny — a passionate engineer with a unique intersection of ski
 
 ## Web3
  - Ethereum, Solidity, Hardhat, Foundry
- - Solana, Rust
+ - Solana, Rust, Anchor
  - Zero Knowledge using Circom ( On going )
  - Public Contests Auditor
  - Formal Verification
