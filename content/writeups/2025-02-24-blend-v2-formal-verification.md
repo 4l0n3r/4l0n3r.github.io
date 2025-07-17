@@ -21,7 +21,7 @@ This repository documents my participation in the **Blend Protocol Formal Verifi
 ## 💾 Contest Overview
 
 * **Github Project**: [Blend Protocol](https://github.com/4l0n3r/2025-02-blend-fv)
-* **Contest Host**: Cantina
+* **Contest Host**: C4
 * **Date**: Feb 2025
 * **Focus**: Rust-based smart contracts
 * **Category**: Formal Verification using SMT-solvers and rule-based specifications
