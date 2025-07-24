@@ -18,4 +18,4 @@ Hey there, I'm Johny — a passionate engineer with a unique intersection of ski
  - Solana, Rust, Anchor
  - Zero Knowledge using Circom ( On going )
  - Public Contests Auditor
- - Formal Verification
+ - Formal Verifier
