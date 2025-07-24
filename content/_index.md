@@ -1,5 +1,5 @@
 +++
-title= "S0m30n3 Aka Johny"
+title= "S0m30n3 - aka Johny"
 template = "homepage.html"
 +++
 
